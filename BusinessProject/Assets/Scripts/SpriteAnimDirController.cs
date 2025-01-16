@@ -7,11 +7,12 @@ public class SpriteAnimDirController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     
-    [SerializeField] private float backAngle = 65f;
-    [SerializeField] private float sideAngle = 155f;
+    [Range(0f, 180f)] [SerializeField] private float backAngle = 45f;
+    private float sideAngle;
 
     private void Start()
     {
+        sideAngle = 180 - backAngle;
         if(Camera.main) mainCam = Camera.main; else Debug.LogWarning("No main Camera!");
         // if(GetComponentInParent<Transform>()) mainTransform = GetComponentInParent<Transform>(); else Debug.LogWarning("no transform found in sprite dir controller");
         if(GetComponent<Animator>()) animator = GetComponent<Animator>(); else Debug.LogWarning("no animator found in sprite dir controller");
