@@ -21,7 +21,11 @@ public class PlayerMovement : MonoBehaviour
 
         // Create movement vector
         Vector3 moveVector = new Vector3(horizontal, 0, vertical).normalized;
-        if (moveVector == Vector3.zero) return;
+        if (moveVector == Vector3.zero)
+        {
+            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            return;
+        }
         
         // Convert input vector to camera-relative movement
         Vector3 cameraForward = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
