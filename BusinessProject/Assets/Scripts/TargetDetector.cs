@@ -9,10 +9,10 @@ public class TargetDetector : MonoBehaviour
     [SerializeField] private GameObject target;
     [SerializeField] private float detectionRange = 2;
     [SerializeField] private float attackRange = 0.5f;
-
-    private bool executed = false;
     
-    public System.Action TargetDetected; //static?
+    public System.Action TargetDetected;
+    public System.Action TargetInAttackRange;
+    public System.Action TargetUndetected;
     void Start()
     {
         if(!target) Debug.LogAssertion("No target set in target detector!");
@@ -27,15 +27,27 @@ public class TargetDetector : MonoBehaviour
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+        
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 
     void LookForTarget()
     {
-        if (Vector3.Distance(target.transform.position, transform.position) <= detectionRange && !executed)
+        Vector2 pos = new Vector2(transform.position.x, transform.position.z);
+        Vector2 tarPos = new Vector2(target.transform.position.x, target.transform.position.z);
+        if (Vector2.Distance(tarPos, pos) <= detectionRange)
         {
             TargetDetected?.Invoke();
-            executed = true;
-            Debug.Log("detected");
+        }
+        if (Vector2.Distance(tarPos, pos) >= detectionRange * 2)
+        {
+            TargetUndetected?.Invoke();
+        }
+
+        if (Vector2.Distance(tarPos, pos) <= attackRange)
+        {
+            TargetInAttackRange?.Invoke();
         }
     }
 

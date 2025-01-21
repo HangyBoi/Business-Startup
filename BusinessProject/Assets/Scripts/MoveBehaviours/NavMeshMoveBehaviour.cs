@@ -8,9 +8,9 @@ public class NavMeshMoveBehaviour : MoveBehaviour
 {
     private NavMeshAgent agent;
     
-    protected override void Start()
+    protected void Awake()
     {
-        base.Start();
+        //base.Awake();
         if (!GetComponent<NavMeshAgent>())
         {
             agent = gameObject.AddComponent(typeof(NavMeshAgent)) as NavMeshAgent;
@@ -19,14 +19,20 @@ public class NavMeshMoveBehaviour : MoveBehaviour
         {
             agent = GetComponent<NavMeshAgent>();
         }
-
-        targetRange = 2f;
         agent.speed = gameObject.GetComponent<Enemy>().GetSpeed();
+        agent.stoppingDistance = targetRange;
     }
     
     public override void SetTargetPosition(Vector3 position)
     {
         base.SetTargetPosition(position);
-        agent.destination = position;
+        if (agent != null)
+        {
+            agent.destination = position;
+        }
+        else
+        {
+            Debug.LogError("NavMeshAgent is not initialized!");
+        }
     }
 }

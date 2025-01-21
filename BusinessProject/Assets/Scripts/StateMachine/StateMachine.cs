@@ -10,7 +10,7 @@ public class StateMachine : MonoBehaviour
 
     [SerializeField]
     private State currentState;
-    private void OnEnable()
+    private void Start() //onEnable
     {
         State[] states = GetComponents<State>();
         if (states.Length > 0)

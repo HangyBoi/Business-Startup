@@ -23,21 +23,30 @@ public class ChasingStateEnemy : State
 
     public override void OnEnterState()
     {
-        if(moveBehaviour && targetDetector) moveBehaviour.SetTargetPosition(targetDetector.GetTarget().transform.position);
-        MoveBehaviour.TargetReached += StopMove;
+        moveBehaviour.TargetReached += StopChase;
+        targetDetector.TargetUndetected += StopChase;
+        targetDetector.TargetInAttackRange += StartAttack;
         Debug.Log("Chasing");
     }
 
     public override void Handle()
     {
+        if(moveBehaviour && targetDetector) moveBehaviour.SetTargetPosition(targetDetector.GetTarget().transform.position);
     }
     public override void OnExitState()
     {
-        MoveBehaviour.TargetReached -= StopMove;
+        moveBehaviour.TargetReached -= StopChase;
+        targetDetector.TargetUndetected -= StopChase;
+        targetDetector.TargetInAttackRange -= StartAttack;
     }
     
-    private void StopMove(GameObject obj)
+    private void StopChase()
     {
-        if(SM && obj == gameObject) SM.TransitToState(GetComponent<IdleStateEnemy>());
+        if(SM) SM.TransitToState(GetComponent<RoamingStateEnemy>());
+    }
+
+    private void StartAttack()
+    {
+        if(SM) SM.TransitToState(GetComponent<AttackStateEnemy>());
     }
 }

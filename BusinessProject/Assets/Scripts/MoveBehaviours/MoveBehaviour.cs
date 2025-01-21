@@ -8,13 +8,10 @@ public abstract class MoveBehaviour : MonoBehaviour
 {
     [SerializeField] protected float targetRange = 0.2f;
     protected Vector3 targetPos;
-    public static System.Action<GameObject> TargetReached;
+    public System.Action TargetReached;
     
-    protected virtual void Start()
-    {
-        //mAnimator = GetComponent<Animator>();
-        //PlayIdleAnimation();
-    }
+    // protected virtual void Awake()
+    // { }
 
     public virtual void SetTargetPosition(Vector3 position)
     {
@@ -25,12 +22,15 @@ public abstract class MoveBehaviour : MonoBehaviour
     public void Stop()
     {
         SetTargetPosition(gameObject.transform.position);
-        TargetReached?.Invoke(gameObject);
+        TargetReached?.Invoke();
     }
 
     private void Update()
     {
-        if (Vector3.Magnitude(gameObject.transform.position - targetPos) <= targetRange)
+        Vector2 pos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.z);
+        Vector2 tarPos = new Vector2(targetPos.x, targetPos.z);
+        
+        if (Vector2.Distance(pos, tarPos) <= targetRange)
         { 
             if(gameObject) Stop();
         }
