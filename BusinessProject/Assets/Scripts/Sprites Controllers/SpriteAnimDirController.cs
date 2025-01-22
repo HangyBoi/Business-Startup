@@ -38,6 +38,10 @@ public class SpriteAnimDirController : MonoBehaviour
             }
             else animationDirection = new Vector2(0f, 1f);
             
+<<<<<<<< HEAD:BusinessProject/Assets/Scripts/Sprites Controllers/SpriteAnimDirController.cs
+========
+            
+>>>>>>>> FightingBranch:BusinessProject/Assets/Scripts/Player/SpriteLogic/SpriteAnimDirController.cs
             animator.SetFloat("MoveX", animationDirection.x);
             animator.SetFloat("MoveY", animationDirection.y);
         }
