@@ -7,10 +7,10 @@ using UnityEngine.AI;
 public class NavMeshMoveBehaviour : MoveBehaviour
 {
     private NavMeshAgent agent;
-    
-    protected void Awake()
+
+    protected override void Awake()
     {
-        //base.Awake();
+        base.Awake();
         if (!GetComponent<NavMeshAgent>())
         {
             agent = gameObject.AddComponent(typeof(NavMeshAgent)) as NavMeshAgent;
@@ -22,7 +22,7 @@ public class NavMeshMoveBehaviour : MoveBehaviour
         agent.speed = gameObject.GetComponent<Enemy>().GetSpeed();
         agent.stoppingDistance = targetRange;
     }
-    
+
     public override void SetTargetPosition(Vector3 position)
     {
         base.SetTargetPosition(position);

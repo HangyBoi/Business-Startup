@@ -9,9 +9,9 @@ public abstract class MoveBehaviour : MonoBehaviour
     [SerializeField] protected float targetRange = 0.2f;
     protected Vector3 targetPos;
     public System.Action TargetReached;
-    
-    // protected virtual void Awake()
-    // { }
+
+    protected virtual void Awake()
+    { }
 
     public virtual void SetTargetPosition(Vector3 position)
     {
@@ -29,10 +29,10 @@ public abstract class MoveBehaviour : MonoBehaviour
     {
         Vector2 pos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.z);
         Vector2 tarPos = new Vector2(targetPos.x, targetPos.z);
-        
+
         if (Vector2.Distance(pos, tarPos) <= targetRange)
-        { 
-            if(gameObject) Stop();
+        {
+            if (gameObject) Stop();
         }
     }
 

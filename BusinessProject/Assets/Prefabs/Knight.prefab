@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 1682598183658726295}
   - component: {fileID: 5524689750296562890}
   - component: {fileID: 6159463760178835460}
-  - component: {fileID: 2853728582719106512}
+  - component: {fileID: 7842589161579459379}
   m_Layer: 0
   m_Name: KnightSprite
   m_TagString: Untagged
@@ -215,12 +215,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7384736712007263061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2150a3fdea2c1428e8eb391585728ba0, type: 3}
+  m_Script: {fileID: 11500000, guid: b9dc1ad6bf8493d4e83f9939eebc749a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainTransform: {fileID: 88024803668176805}
-  backAngle: 50
---- !u!114 &2853728582719106512
+  backAngle: 45
+--- !u!114 &7842589161579459379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7384736712007263061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c6759885fa8744f68e9ac73a3689a58, type: 3}
+  m_Script: {fileID: 11500000, guid: 461f95d297eee94488f84e7cf5ea8d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   freezeXZAxis: 0

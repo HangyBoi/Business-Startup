@@ -9,10 +9,10 @@ public class IdleStateEnemy : IdleState
         SM.TransitToState(GetComponent<RoamingStateEnemy>());
     }
 
-    public override void Handle() {}
+    public override void Handle() { }
 
     public override void OnExitState()
     {
     }
-    
+
 }

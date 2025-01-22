@@ -7,7 +7,8 @@ using UnityEngine;
 public class WayPoints : MonoBehaviour
 {
     public List<WayPoint> wayPoints { get; private set; }
-    void Start()
+
+    void Awake()
     {
         wayPoints = GetComponentsInChildren<WayPoint>().ToList();
         //Debug.Log(wayPoints.Count);

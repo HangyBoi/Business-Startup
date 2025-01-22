@@ -21,7 +21,7 @@ public class StateMachine : MonoBehaviour
             }
         }
         //Set default to chase state to setup the agent.
-        if(!currentState) TransitToState(GetComponent<IdleState>());
+        if (!currentState) TransitToState(GetComponent<IdleState>());
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class StateMachine : MonoBehaviour
 
     public void TransitToState(State pState)
     {
-        if(currentState != null)
+        if (currentState != null)
         {
             currentState.OnExitState();
             //Notify subscribers about the state change, e.g. an animation controller
