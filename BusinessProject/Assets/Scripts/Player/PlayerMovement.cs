@@ -40,11 +40,7 @@ public class PlayerMovement : MonoBehaviour
         // Rotate the player to face the relative movement direction
         float targetAngle = Mathf.Atan2(relativeMoveDirection.x, relativeMoveDirection.z) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
-        //
-        // // Rotate the player to face movement direction, including diagonals
-        // float angle = Mathf.Atan2(moveVector.x, moveVector.z) * Mathf.Rad2Deg; // Angle in degrees
-        // float snappedAngle = Mathf.Round(angle / 45f) * 45f;
-        //transform.rotation = Quaternion.Euler(0, snappedAngle, 0);
+        
         transform.rotation = targetRotation;
 
     }

@@ -38,7 +38,6 @@ public class SpriteAnimDirController : MonoBehaviour
             }
             else animationDirection = new Vector2(0f, 1f);
             
-            Debug.Log(angle);
             
             animator.SetFloat("MoveX", animationDirection.x);
             animator.SetFloat("MoveY", animationDirection.y);
