@@ -9,13 +9,14 @@ public class Interactable : MonoBehaviour
     [Tooltip("Interaction data asset")]
     public InteractionData interactionData;
 
+
     // private void Start()
     // {
-    //     // Optionally, check if this interactable has already been interacted with
-    //     if (GameStateManager.Instance.HasInteracted(interactableID))
-    //     {
-    //         gameObject.SetActive(false);
-    //     }
+    //     // // Optionally, check if this interactable has already been interacted with
+    //     // if (GameStateManager.Instance.HasInteracted(interactableID))
+    //     // {
+    //     //     gameObject.SetActive(false);
+    //     // }
     // }
 
     /// <summary>
@@ -59,10 +60,12 @@ public class Interactable : MonoBehaviour
     private void HandlePickup()
     {
         Debug.Log("Handle Pickup");
-        // Example: Add item to inventory
-        // Inventory.Instance.AddItem(interactionData.itemName);
-        //
-        // Decide to destroy or deactivate based on InteractionData
+        if(interactableID == TaskManager.taskManager.GetCurrentTask().Data.TaskID) TaskManager.taskManager.UpdateTaskProgress(interactableID, 1);
+        if(Inventory.inventory) Inventory.inventory.AddItem(this);
+        else
+        {
+            Debug.Log("inventory not created");
+        }
         if (interactionData is PickupInteractionData pIntData && pIntData.destroyOnInteract)
         {
             Destroy(gameObject);

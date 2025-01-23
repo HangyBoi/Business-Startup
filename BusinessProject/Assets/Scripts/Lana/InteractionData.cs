@@ -19,7 +19,7 @@ public abstract class InteractionData : ScriptableObject
 public class PickupInteractionData : InteractionData
 {
     public string itemName;
-    public bool destroyOnInteract;
+    public bool destroyOnInteract; 
 }
 
 // Talk InteractionData

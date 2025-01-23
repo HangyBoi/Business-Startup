@@ -1,3 +1,6 @@
+// UIManager.cs
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,22 +11,45 @@ public class UIManager : MonoBehaviour
     [Tooltip("Prefab for the interaction popup UI")]
     public GameObject popupPrefab; // Assign your popup prefab in the Inspector
 
+    [SerializeField] private TextMeshProUGUI taskTitleText;
+    [SerializeField] private TextMeshProUGUI taskProgressionText;
+
     private GameObject currentPopup;
 
     private void Awake()
     {
-        //Singleton
-        if (uiManager == null) uiManager = this;
-        else Destroy(gameObject);
-    }
+        // Singleton Pattern
+        if (uiManager == null)
+        {
+            uiManager = this;
+            DontDestroyOnLoad(gameObject); // Persist across scenes
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
-    private void OnEnable()
-    {
         // Subscribe to InteractionManager events
         if (InteractionManager.interactionManager != null)
         {
             InteractionManager.interactionManager.OnInteractableDetected += HandleInteractableDetected;
             InteractionManager.interactionManager.OnInteractableExited += HandleInteractableExited;
+        }
+        else
+        {
+            Debug.LogError("Interaction Manager is null!");
+        }
+
+        // Subscribe to TaskManager events
+        if (TaskManager.taskManager != null)
+        {
+            TaskManager.OnTaskAccepted += HandleTaskAccepted;
+            TaskManager.OnTaskProgressed += HandleTaskProgressed;
+            TaskManager.OnTaskCompleted += HandleTaskCompleted;
+        }
+        else
+        {
+            Debug.LogError("Task Manager is null!");
         }
     }
 
@@ -34,6 +60,13 @@ public class UIManager : MonoBehaviour
         {
             InteractionManager.interactionManager.OnInteractableDetected -= HandleInteractableDetected;
             InteractionManager.interactionManager.OnInteractableExited -= HandleInteractableExited;
+        }
+
+        if (TaskManager.taskManager != null)
+        {
+            TaskManager.OnTaskAccepted -= HandleTaskAccepted;
+            TaskManager.OnTaskProgressed -= HandleTaskProgressed;
+            TaskManager.OnTaskCompleted -= HandleTaskCompleted;
         }
     }
 
@@ -56,6 +89,39 @@ public class UIManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Handles the event when a task is accepted.
+    /// </summary>
+    /// <param name="task">The accepted task.</param>
+    private void HandleTaskAccepted(Task task)
+    {
+        Debug.Log($"UIManager: Task '{task.Data.Title}' accepted.");
+        taskTitleText.text = task.Data.Title;
+        taskProgressionText.text = $"{task.CurrentProgress}/{task.Data.RequiredProgress}";
+        // Additional UI updates can be handled here
+    }
+
+    /// <summary>
+    /// Handles the event when a task is progressed.
+    /// </summary>
+    /// <param name="task">The progressed task.</param>
+    private void HandleTaskProgressed(Task task)
+    {
+        Debug.Log($"UIManager: Task '{task.Data.Title}' progressed.");
+        taskProgressionText.text = $"{task.CurrentProgress}/{task.Data.RequiredProgress}";
+        // Additional UI updates can be handled here
+    }
+
+    /// <summary>
+    /// Handles the event when a task is completed.
+    /// </summary>
+    /// <param name="task">The completed task.</param>
+    private void HandleTaskCompleted(Task task)
+    {
+        Debug.Log($"UIManager: Task '{task.Data.Title}' completed.");
+        taskProgressionText.text = "Completed!";
+    }
+
+    /// <summary>
     /// Creates and displays the interaction popup.
     /// </summary>
     /// <param name="text">The text to display in the popup.</param>
@@ -63,10 +129,11 @@ public class UIManager : MonoBehaviour
     /// <param name="icon">Optional icon to display.</param>
     public void ShowPopup(string text, Vector3 worldPosition, Sprite icon = null)
     {
+        Debug.Log("Show Popup");
         // Destroy existing popup if any
         if (currentPopup != null) Destroy(currentPopup);
 
-        // Instantiate a new popup
+        // Instantiate a new popup as a child of the Canvas
         currentPopup = Instantiate(popupPrefab, transform);
 
         // Convert world position to screen position for UI placement
@@ -74,10 +141,14 @@ public class UIManager : MonoBehaviour
         currentPopup.GetComponent<RectTransform>().position = screenPos;
 
         // Set the popup text
-        Text popupText = currentPopup.GetComponentInChildren<Text>();
-        if (popupText != null)
+        TextMeshProUGUI popupTextComponent = currentPopup.GetComponentInChildren<TextMeshProUGUI>();
+        if (popupTextComponent != null)
         {
-            popupText.text = text;
+            popupTextComponent.text = text;
+        }
+        else
+        {
+            Debug.LogWarning("Popup Prefab does not have a TextMeshProUGUI component.");
         }
 
         // Set the popup icon, if any
@@ -107,15 +178,24 @@ public class UIManager : MonoBehaviour
             currentPopup = null;
         }
     }
-
-    /// <summary>
-    /// Optionally, displays a simple message (e.g., for failed interactions).
-    /// </summary>
-    /// <param name="message">The message to display.</param>
-    public void ShowMessage(string message)
-    {
-        // Implement message display logic (e.g., temporary popup)
-        // This can be similar to ShowPopup but with a different prefab or logic
-        Debug.Log("UIManager ShowMessage: " + message);
-    }
+    
+    // public void DisplayCurrentTask()
+    // {
+    //     Task currentTask = TaskManager.taskManager.GetCurrentTask();
+    //     if (currentTask != null)
+    //     {
+    //         // Update UI elements with current task details
+    //         taskTitleText.text = currentTask.Data.Title;
+    //         taskProgressionText.text = $"{currentTask.CurrentProgress}/{currentTask.Data.RequiredProgress}";
+    //         // Uncomment and set up a Progress Bar if desired
+    //         // taskProgressBar.value = (float)currentTask.CurrentProgress / currentTask.Data.RequiredProgress;
+    //     }
+    //     else
+    //     {
+    //         // Clear or hide UI elements when no task is active
+    //         taskTitleText.text = "No active tasks";
+    //         taskProgressionText.text = "";
+    //         // taskProgressBar.value = 0f;
+    //     }
+    // }
 }
