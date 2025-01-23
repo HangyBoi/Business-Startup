@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461f95d297eee94488f84e7cf5ea8d94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  freezeXZAxis: 0
+  freezeXZAxis: 1

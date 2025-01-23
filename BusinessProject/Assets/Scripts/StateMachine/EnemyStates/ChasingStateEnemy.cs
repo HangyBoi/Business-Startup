@@ -26,7 +26,7 @@ public class ChasingStateEnemy : State
         moveBehaviour.TargetReached += StopChase;
         targetDetector.TargetUndetected += StopChase;
         targetDetector.TargetInAttackRange += StartAttack;
-        Debug.Log("Chasing");
+        Debug.Log("Enemy is Chasing");
     }
 
     public override void Handle()
