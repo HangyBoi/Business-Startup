@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
 
     private Rigidbody playerRigidbody;
-    
+
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
@@ -26,26 +23,27 @@ public class PlayerMovement : MonoBehaviour
             gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             return;
         }
-        
+    
         // Convert input vector to camera-relative movement
         Vector3 cameraForward = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
         Vector3 cameraRight = new Vector3(Camera.main.transform.right.x, 0, Camera.main.transform.right.z).normalized;
 
         // Calculate the relative movement direction
         Vector3 relativeMoveDirection = (cameraRight * moveVector.x + cameraForward * moveVector.z).normalized;
-        
+    
         // Apply movement
         Vector3 newVelocity = relativeMoveDirection * moveSpeed;
         newVelocity.y = playerRigidbody.velocity.y;
-        
+    
         //playerRigidbody.velocity = newVelocity;
         transform.Translate(relativeMoveDirection * moveSpeed * Time.deltaTime, Space.World);
-        
+    
         // Rotate the player to face the relative movement direction
         float targetAngle = Mathf.Atan2(relativeMoveDirection.x, relativeMoveDirection.z) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
-        
+    
         transform.rotation = targetRotation;
 
     }
 }
+

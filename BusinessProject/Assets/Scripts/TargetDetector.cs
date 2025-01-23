@@ -9,6 +9,7 @@ public class TargetDetector : MonoBehaviour
     [SerializeField] private GameObject target;
     [SerializeField] private float detectionRange = 2;
     [SerializeField] private float attackRange = 0.5f;
+    [SerializeField] private float unDetectionRangeMultiplier = 2f;
     
     public System.Action TargetDetected;
     public System.Action TargetInAttackRange;
@@ -40,7 +41,7 @@ public class TargetDetector : MonoBehaviour
         {
             TargetDetected?.Invoke();
         }
-        if (Vector2.Distance(tarPos, pos) >= detectionRange * 2)
+        if (Vector2.Distance(tarPos, pos) >= detectionRange * unDetectionRangeMultiplier)
         {
             TargetUndetected?.Invoke();
         }

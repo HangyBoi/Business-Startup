@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3373192850786543242}
   - component: {fileID: 3768974040694154762}
   - component: {fileID: 2218186809727324355}
+  - component: {fileID: 5066616022220081175}
   m_Layer: 3
   m_Name: Knight
   m_TagString: Player
@@ -98,6 +99,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &5066616022220081175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794537910944158483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd8f64ca0a8788f4d9291f3c6e3dc160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  invulnerabilityDuration: 2
+  knockbackForce: 5
+  playerRigidbody: {fileID: 3373192850786543242}
+  spriteRenderer: {fileID: 1682598183658726295}
+  blinkInterval: 0.2
 --- !u!1 &7384736712007263061
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +192,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 1258491729, guid: 45be0b5163c8e448a9d4604884d4c3a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

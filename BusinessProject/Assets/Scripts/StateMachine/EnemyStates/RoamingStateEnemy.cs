@@ -50,7 +50,7 @@ public class RoamingStateEnemy : State
     public override void OnEnterState()
     {
         Initialize();
-        Debug.Log("Roaming");
+        Debug.Log("Enemy is Roaming");
         targetDetector.TargetDetected += StartChase;
         moveBehaviour.TargetReached += GoToFirstWayPoint;
         GoToFirstWayPoint();

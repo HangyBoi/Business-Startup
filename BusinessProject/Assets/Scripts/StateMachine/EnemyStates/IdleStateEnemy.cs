@@ -5,7 +5,7 @@ public class IdleStateEnemy : IdleState
 {
     public override void OnEnterState()
     {
-        Debug.Log("Idle");
+        Debug.Log("Enemy is Idling");
         SM.TransitToState(GetComponent<RoamingStateEnemy>());
     }
 
