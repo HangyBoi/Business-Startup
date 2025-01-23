@@ -23,7 +23,7 @@ public class ChasingStateEnemy : State
 
     public override void OnEnterState()
     {
-        moveBehaviour.TargetReached += StopChase;
+       // moveBehaviour.TargetReached += StopChase;
         targetDetector.TargetUndetected += StopChase;
         targetDetector.TargetInAttackRange += StartAttack;
         Debug.Log("Enemy is Chasing");
@@ -31,11 +31,14 @@ public class ChasingStateEnemy : State
 
     public override void Handle()
     {
+        Vector2 pos = new Vector2(transform.position.x, transform.position.z);
+        Vector2 tarPos = new Vector2(targetDetector.GetTarget().transform.position.x, targetDetector.GetTarget().transform.position.z);
+        
         if(moveBehaviour && targetDetector) moveBehaviour.SetTargetPosition(targetDetector.GetTarget().transform.position);
     }
     public override void OnExitState()
     {
-        moveBehaviour.TargetReached -= StopChase;
+        //moveBehaviour.TargetReached -= StopChase;
         targetDetector.TargetUndetected -= StopChase;
         targetDetector.TargetInAttackRange -= StartAttack;
     }
