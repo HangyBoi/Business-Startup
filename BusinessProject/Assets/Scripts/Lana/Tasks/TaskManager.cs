@@ -37,7 +37,6 @@ public class TaskManager : MonoBehaviour
             }
         }
         
-        AcceptTask("0"); //TEST
         //Debug.Log(tasks.Count);
     }
 

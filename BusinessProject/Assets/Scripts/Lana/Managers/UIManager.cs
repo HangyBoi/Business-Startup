@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
 
     private GameObject currentPopup;
 
-    private void Awake()
+    private void Start()
     {
         // Singleton Pattern
         if (uiManager == null)
@@ -46,6 +46,7 @@ public class UIManager : MonoBehaviour
             TaskManager.OnTaskAccepted += HandleTaskAccepted;
             TaskManager.OnTaskProgressed += HandleTaskProgressed;
             TaskManager.OnTaskCompleted += HandleTaskCompleted;
+            TaskManager.taskManager.AcceptTask("0"); //TEST
         }
         else
         {
