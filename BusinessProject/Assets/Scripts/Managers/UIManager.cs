@@ -1,18 +1,22 @@
-// UIManager.cs
 using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Linq;
 
 public class UIManager : MonoBehaviour
 {
     public static UIManager uiManager { get; private set; }
 
     [Tooltip("Prefab for the interaction popup UI")]
-    public GameObject popupPrefab; // Assign your popup prefab in the Inspector
+    public GameObject popupPrefab;
+    public GameObject inventorySlotPrefab;
 
     [SerializeField] private TextMeshProUGUI taskTitleText;
     [SerializeField] private TextMeshProUGUI taskProgressionText;
+    
+    [SerializeField] private GameObject itemsPanel;
 
     private GameObject currentPopup;
 
@@ -57,6 +61,16 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("Task Manager is null!");
         }
+        
+        // Subscribe to Inventory events
+        if (Inventory.inventory != null)
+        {
+            Inventory.ItemAddedToInventory += ReinitializeInventory;
+        }
+        else
+        {
+            Debug.LogError("Inventory is null!");
+        }
     }
 
     private void OnDisable()
@@ -73,6 +87,11 @@ public class UIManager : MonoBehaviour
             TaskManager.OnTaskAccepted -= HandleTaskAccepted;
             TaskManager.OnTaskProgressed -= HandleTaskProgressed;
             TaskManager.OnTaskCompleted -= HandleTaskCompleted;
+        }
+        
+        if (Inventory.inventory != null)
+        {
+            Inventory.ItemAddedToInventory -= ReinitializeInventory;
         }
     }
 
@@ -242,7 +261,34 @@ public class UIManager : MonoBehaviour
             currentPopup = null;
         }
     }
-    
+
+    private void ReinitializeInventory()
+    {
+        ClearInventoryUI();
+        InstantiateInventorySlots();
+    }
+
+    private void InstantiateInventorySlots()
+    {
+        foreach (KeyValuePair<Interactable, int> item in Inventory.inventory.items)
+        {
+            GameObject slot = Instantiate(inventorySlotPrefab, itemsPanel.transform);
+            slot.GetComponentInChildren<Image>().sprite = item.Key.interactionData.icon;
+            slot.GetComponentInChildren<TextMeshProUGUI>().text = item.Value.ToString();
+        }
+    }
+
+    private void ClearInventoryUI()
+    {
+        // Iterate through each child transform of itemsPanel and destroy the GameObject
+        foreach (Transform child in itemsPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+
+
     // public void DisplayCurrentTask()
     // {
     //     Task currentTask = TaskManager.taskManager.GetCurrentTask();
