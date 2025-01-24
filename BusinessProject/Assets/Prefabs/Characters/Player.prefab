@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 88024803668176805}
   - component: {fileID: 3373192850786543242}
   - component: {fileID: 3768974040694154762}
+  - component: {fileID: 9089871409942776734}
   - component: {fileID: 2218186809727324355}
   - component: {fileID: 5066616022220081175}
   - component: {fileID: 5184513619504657332}
+  - component: {fileID: 8571972768742460713}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -87,6 +89,27 @@ CapsuleCollider:
   m_Height: 1.4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &9089871409942776734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794537910944158483}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2218186809727324355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +153,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bfa05ac922fd4b1986ebaafc97bd07a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8571972768742460713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794537910944158483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96fe9b173fe1d84086c55215b466bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackBar: {fileID: 0}
+  attackCooldown: 2
+  weaponPivot: {fileID: 0}
+  weaponRange: 1.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  basicDamage: 1
+  perfectDamage: 3
+  basicKnockback: 4
+  perfectKnockback: 6
 --- !u!1 &7384736712007263061
 GameObject:
   m_ObjectHideFlags: 0

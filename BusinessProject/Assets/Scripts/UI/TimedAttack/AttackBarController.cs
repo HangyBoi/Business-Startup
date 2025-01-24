@@ -20,10 +20,12 @@ public class AttackBarController : MonoBehaviour
 
     private float arrowPos = -0.5f;  // Range [0..1]
     private int direction = 1;    // 1 = moving right, -1 = moving left
+    private bool isActive;
 
     void Start()
     {
         GenerateZones();
+        gameObject.SetActive(false); // attackBar typically hidden at start
     }
 
     void Update()
@@ -36,9 +38,28 @@ public class AttackBarController : MonoBehaviour
 
         // Update the arrowRect’s anchoredPosition accordingly
         UpdateArrowPosition();
+    }
 
-        CheckForTimedPress();
+    public void StartArrowMovement()
+    {
+        // Reset arrow data
+        arrowPos = 0f;
+        direction = 1;
+        isActive = true;
+    }
 
+    public bool WasArrowInRedZone()
+    {
+        // isActive = false; // optionally freeze arrow after checking
+        // Check if arrowPos was inside any red zone
+        foreach (var (start, end) in zoneRanges)
+        {
+            if (arrowPos >= start && arrowPos <= end)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     // ----------------------------------------------------
@@ -107,36 +128,4 @@ public class AttackBarController : MonoBehaviour
         arrowRect.anchoredPosition = new Vector2(newX, arrowRect.anchoredPosition.y);
     }
 
-    // ----------------------------------------------------
-    // 3) Check if user hits space in a valid zone
-    // ----------------------------------------------------
-    private void CheckForTimedPress()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            // Check if arrowPos is within any (start, end)
-            bool success = false;
-            foreach (var (start, end) in zoneRanges)
-            {
-                if (arrowPos >= start && arrowPos <= end)
-                {
-                    success = true;
-                    break;
-                }
-            }
-
-            if (success)
-            {
-                Debug.Log("Attack Success!");
-            }
-            else
-            {
-                Debug.Log("Attack Fail!");
-            }
-
-            // reset arrow
-            arrowPos = 0f;
-            direction = 1;
-        }
-    }
 }
