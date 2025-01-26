@@ -1,30 +1,40 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public enum InteractionType
 {
     Pickup,
-    Talk,
+    Map,
     // Add more interaction types as needed
 }
 public abstract class InteractionData : ScriptableObject
 {
-    public string interactionName;
-    public string popupText;
+    public string interactableName;
     public Sprite icon;
-    public InteractionType interactionType;
+    public InteractionType interactionType { get; private set; }
+    protected void SetInteractionType(InteractionType type)
+    {
+        interactionType = type;
+    }
 }
 
 // Pickup InteractionData
 [CreateAssetMenu(menuName = "Interaction/Pickup")]
 public class PickupInteractionData : InteractionData
 {
-    public string itemName;
     public bool destroyOnInteract; 
+    private void OnValidate()
+    {
+        SetInteractionType(InteractionType.Pickup);
+    }
 }
 
 // Talk InteractionData
-[CreateAssetMenu(menuName = "Interaction/Talk")]
-public class TalkInteractionData : InteractionData
+[CreateAssetMenu(menuName = "Interaction/Map")]
+public class MapInteractionData : InteractionData
 {
-    //public DialogueData dialogueData; // Reference to a Dialogue ScriptableObject
+    private void OnValidate()
+    {
+        SetInteractionType(InteractionType.Map);
+    }
 }

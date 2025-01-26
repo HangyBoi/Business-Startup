@@ -1,23 +1,19 @@
-// Interactable.cs
+using System;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
     [Tooltip("Unique identifier for the interactable")]
-    public string interactableID; // Unique identifier (e.g., UUID)
+    public string interactableID; 
 
     [Tooltip("Interaction data asset")]
     public InteractionData interactionData;
-
-
-    // private void Start()
-    // {
-    //     // // Optionally, check if this interactable has already been interacted with
-    //     // if (GameStateManager.Instance.HasInteracted(interactableID))
-    //     // {
-    //     //     gameObject.SetActive(false);
-    //     // }
-    // }
+    public static event System.Action<Interactable> InteractableDestroyed;
+    
+    private void OnDestroy()
+    {
+        InteractableDestroyed?.Invoke(this);
+    }
 
     /// <summary>
     /// Executes the interaction based on InteractionData.
@@ -29,17 +25,13 @@ public class Interactable : MonoBehaviour
             case InteractionType.Pickup:
                 HandlePickup();
                 break;
-            case InteractionType.Talk:
-                HandleTalk();
+            case InteractionType.Map:
+                HandleMap();
                 break;
-            // Add more cases for additional interaction types
             default:
                 Debug.LogWarning("Unhandled interaction type: " + interactionData.interactionType);
                 break;
         }
-
-        // Register the interaction to manage state
-        //GameStateManager.Instance.RegisterInteraction(interactableID);
     }
 
     /// <summary>
@@ -47,24 +39,25 @@ public class Interactable : MonoBehaviour
     /// </summary>
     public string GetPopupText()
     {
-        return interactionData.popupText;
+        return interactionData.interactableName;
     }
-
-    /// <summary>
-    /// Returns the world position for UI popup placement.
-    /// </summary>
-    public Vector3 GetUIPosition() => transform.position;
 
     #region Interaction Handlers
 
     private void HandlePickup()
     {
-        Debug.Log("Handle Pickup");
-        if(interactableID == TaskManager.taskManager.GetCurrentTask().Data.TaskID) TaskManager.taskManager.UpdateTaskProgress(interactableID, 1);
+        //Debug.Log("Handle Pickup");
+        //if(!TaskManager.taskManager.GetCurrentTask()) Debug.LogAssertion("No current task in task manager!");
+        if(TaskManager.taskManager.GetCurrentTask() && interactableID == TaskManager.taskManager.GetCurrentTask().Data.TaskID) TaskManager.taskManager.UpdateTaskProgress(interactableID, 1);
+        // else
+        // {
+        //     Debug.Log("No task related to this pickup id!");
+        // }
+        
         if(Inventory.inventory) Inventory.inventory.AddItem(this);
         else
         {
-            Debug.Log("inventory not created");
+            Debug.Log("Inventory not created!");
         }
         if (interactionData is PickupInteractionData pIntData && pIntData.destroyOnInteract)
         {
@@ -76,12 +69,20 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    private void HandleTalk()
+    private void HandleMap()
     {
-        Debug.Log("Handle Talk");
-        // Example: Start dialogue
-        //DialogueManager.Instance.StartDialogue(interactionData.dialogueData);
+        //Debug.Log("Handle Map");
+        if(UIManager.uiManager.mapUiController) UIManager.uiManager.mapUiController.ShowMap();
+        TestAcceptTask();
     }
 
     #endregion
+    
+    /// <summary>
+    /// Delayed test method to accept a task after initialization.
+    /// </summary>
+    private void TestAcceptTask()
+    {
+        TaskManager.taskManager.AcceptTask("0");
+    }
 }

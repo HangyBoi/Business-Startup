@@ -23,10 +23,10 @@ public class ChasingStateEnemy : State
 
     public override void OnEnterState()
     {
-       // moveBehaviour.TargetReached += StopChase;
+        //Debug.Log("Enemy is Chasing");
+        //moveBehaviour.TargetReached += StopChase;
         targetDetector.TargetUndetected += StopChase;
         targetDetector.TargetInAttackRange += StartAttack;
-        Debug.Log("Enemy is Chasing");
     }
 
     public override void Handle()

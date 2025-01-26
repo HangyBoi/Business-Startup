@@ -31,7 +31,7 @@ public class Inventory : MonoBehaviour
         } 
         
         items.Add(item, 1);
-        Debug.Log($"Item '{item}' added to inventory.");
+        //Debug.Log($"Item '{item}' added to inventory.");
         ItemAddedToInventory?.Invoke();
         // Notify TaskManager or other systems if needed
     }
