@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableID: 0
-  interactionData: {fileID: 0}
+  interactionData: {fileID: 11400000, guid: d07a23ef76e6542baa97af250fd582f3, type: 2}
 --- !u!114 &5468248145543988499
 MonoBehaviour:
   m_ObjectHideFlags: 0

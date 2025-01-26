@@ -41,7 +41,7 @@ public class InteractionManager : MonoBehaviour
     private void Update()
     {
         // Handle interaction input (e.g., pressing 'E')
-        if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
+        if (currentInteractable != null && Input.GetKeyDown(KeyCode.F))
         {
             currentInteractable.OnInteract();
             OnInteractableExited?.Invoke(currentInteractable);
