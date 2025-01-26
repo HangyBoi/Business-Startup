@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 newVelocity = relativeMoveDirection * moveSpeed;
         newVelocity.y = playerRigidbody.velocity.y;
     
-        //playerRigidbody.velocity = newVelocity;
-        transform.Translate(relativeMoveDirection * moveSpeed * Time.deltaTime, Space.World);
+        playerRigidbody.velocity = newVelocity;
+        //transform.Translate(relativeMoveDirection * moveSpeed * Time.deltaTime, Space.World);
     
         // Rotate the player to face the relative movement direction
         float targetAngle = Mathf.Atan2(relativeMoveDirection.x, relativeMoveDirection.z) * Mathf.Rad2Deg;

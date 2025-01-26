@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 5875144416894133793}
   - component: {fileID: 1543804732003631735}
   - component: {fileID: 8763325443740835379}
+  - component: {fileID: 3830104623276190047}
   - component: {fileID: 7880466855035521660}
   - component: {fileID: 3681988780398591007}
   - component: {fileID: 9006516504645835214}
-  - component: {fileID: 3830104623276190047}
   - component: {fileID: 4045752183279658190}
   m_Layer: 0
   m_Name: Enemy
@@ -143,6 +143,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stateID: 
+--- !u!114 &3830104623276190047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638545251071711920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccacb4959af734f46be87f2233553167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateID: 
+  wayPointsObj: {fileID: 0}
 --- !u!114 &7880466855035521660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,20 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stateID: 
   damageAmount: 1
---- !u!114 &3830104623276190047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2638545251071711920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccacb4959af734f46be87f2233553167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stateID: 
-  wayPointsObj: {fileID: 0}
+  knockbackForce: 3
 --- !u!114 &4045752183279658190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +213,7 @@ MonoBehaviour:
   maxHealth: 6
   itemToSpawn: {fileID: 8505560822873570727, guid: db2dcf3cf50406b41ad8ed65171893e0, type: 3}
   destroyDelay: 0.5
+  knockbackDuration: 0.2
 --- !u!1 &3437615101070909304
 GameObject:
   m_ObjectHideFlags: 0

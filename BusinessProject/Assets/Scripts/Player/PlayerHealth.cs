@@ -11,31 +11,18 @@ public class PlayerHealth : MonoBehaviour
     private bool isInvulnerable;
 
     [Header("Knockback Settings")]
-    [SerializeField] private float knockbackForce = 5f;
+    [SerializeField] private float knockbackDuration = 0.25f; // how long the push lasts
     [SerializeField] private Rigidbody playerRigidbody;
 
-    // Optional: reference to the SpriteRenderer or material for blinking effect
+    [Header("Blink Settings")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private float blinkInterval = 0.2f;
 
-    // We’ll rely on an external UI script to update hearts (HeartsUI or something similar).
+    // For UI updates
     public System.Action<int, int> OnHealthChanged;
-    // e.g. (currentHP, maxHP) => UpdateHeartsUI()
 
-    private void Start()
-    {
-        // Find the HeartsUI in the scene
-        HeartsUI heartsUI = FindObjectOfType<HeartsUI>();
-
-        if (heartsUI != null)
-        {
-            // Whenever the player's health changes, update hearts
-            OnHealthChanged += heartsUI.UpdateHearts;
-
-            // Initialize the UI immediately
-            heartsUI.UpdateHearts(currentHealth, maxHealth);
-        }
-    }
+    private Coroutine knockbackRoutine;
+    private Coroutine invulRoutine;
 
     private void Awake()
     {
@@ -44,74 +31,61 @@ public class PlayerHealth : MonoBehaviour
         if (!spriteRenderer) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
-    /// <summary>
-    /// Receive damage from any source (enemy, environment).
-    /// </summary>
-    /// <param name="damage">Amount of HP lost.</param>
+    private void Start()
+    {
+        // Example: wire up hearts UI if you have it
+        HeartsUI heartsUI = FindObjectOfType<HeartsUI>();
+        if (heartsUI != null)
+        {
+            OnHealthChanged += heartsUI.UpdateHearts;
+            OnHealthChanged?.Invoke(currentHealth, maxHealth);
+        }
+    }
+
     public void TakeDamage(int damage, Vector3? knockbackDirection = null)
     {
-        // If player is invulnerable, ignore.
         if (isInvulnerable) return;
 
         currentHealth -= damage;
         if (currentHealth < 0) currentHealth = 0;
 
-        // Trigger knockback if direction provided
         if (knockbackDirection.HasValue)
         {
-            Knockback(knockbackDirection.Value);
+            // Apply the passed knockback force directly
+            Vector3 finalForce = knockbackDirection.Value;
+
+            if (knockbackRoutine != null) StopCoroutine(knockbackRoutine);
+            knockbackRoutine = StartCoroutine(KnockbackRoutine(finalForce));
         }
 
-        // Immediately become invulnerable for a short duration
-        StartCoroutine(InvulnerabilityRoutine());
+        // Trigger invulnerability & blink
+        if (invulRoutine != null) StopCoroutine(invulRoutine);
+        invulRoutine = StartCoroutine(InvulnerabilityRoutine());
 
-        // Notify UI or other systems that HP changed
+        // Notify UI
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
 
-        // Check if we died
+        // Check for death
         if (currentHealth <= 0)
         {
             Die();
         }
     }
 
-    private void Knockback(Vector3 direction)
+    private IEnumerator KnockbackRoutine(Vector3 force)
     {
-        // Stop any existing knockback routine to avoid overlapping pushes
-        StopAllCoroutines();
+        // Temporarily disable your movement script
+        PlayerMovement movementScript = GetComponent<PlayerMovement>();
+        if (movementScript != null) movementScript.enabled = false;
 
-        // Start pushing the player smoothly over (e.g.) 0.25 seconds
-        float knockbackDuration = 0.25f;
-        StartCoroutine(KnockbackRoutine(direction, knockbackDuration));
-    }
+        // Clear and add impulse
+        playerRigidbody.velocity = Vector3.zero;
+        playerRigidbody.AddForce(force, ForceMode.Impulse);
 
-    private IEnumerator KnockbackRoutine(Vector3 direction, float duration)
-    {
-        // Ensure direction is normalized
-        direction = direction.normalized;
+        yield return new WaitForSeconds(knockbackDuration);
 
-        float elapsed = 0f;
-        // We'll distribute our total knockbackForce across this duration.
-        // The actual force per frame depends on your ForceMode and Time.fixedDeltaTime below.
-
-        while (elapsed < duration)
-        {
-            // Make sure we do this in sync with physics
-            yield return new WaitForFixedUpdate();
-
-            // How much of the knockbackForce to apply *this* frame
-            float fraction = Time.fixedDeltaTime / duration;
-            Vector3 frameForce = direction * (knockbackForce * fraction);
-
-            // Add a fraction of the total push
-            if (playerRigidbody)
-            {
-                // You can experiment with ForceMode.Impulse vs. ForceMode.Force/Acceleration
-                playerRigidbody.AddForce(frameForce, ForceMode.Impulse);
-            }
-
-            elapsed += Time.fixedDeltaTime;
-        }
+        // Re-enable movement
+        if (movementScript != null) movementScript.enabled = true;
     }
 
 
@@ -122,7 +96,6 @@ public class PlayerHealth : MonoBehaviour
         float timer = 0f;
         bool spriteVisible = true;
 
-        // Basic blink logic
         while (timer < invulnerabilityDuration)
         {
             timer += blinkInterval;
@@ -144,7 +117,6 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player died!");
-        // For now, just log. You could do scene reload, open a Game Over UI, etc.
+        // e.g. reload scene or show game over
     }
-
 }

@@ -24,14 +24,14 @@ public class TargetDetector : MonoBehaviour
         if(target) LookForTarget();
     }
 
-    private void OnDrawGizmos()
+/*    private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
         
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, attackRange);
-    }
+    }*/
 
     void LookForTarget()
     {

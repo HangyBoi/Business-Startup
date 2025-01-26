@@ -7,49 +7,87 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
 
     [Header("Death")]
-    [SerializeField] private GameObject itemToSpawn;   // e.g. coin or potion
+    [SerializeField] private GameObject itemToSpawn;
     [SerializeField] private float destroyDelay = 0.5f;
+
+    [Header("Knockback")]
+    [SerializeField] private float knockbackDuration = 0.2f;
+
+    // Reference to the (kinematic) Rigidbody, just so you can detect or configure if needed
+    private Rigidbody rb;
+    private Coroutine knockbackRoutine;
 
     private void Awake()
     {
         currentHealth = maxHealth;
+        rb = GetComponent<Rigidbody>();
+
+        // Make sure it's kinematic in code if you want to enforce it
+        if (rb)
+        {
+            rb.isKinematic = true;
+        }
     }
 
-    /// <summary>
-    /// Called by PlayerCombat or other damage sources
-    /// The second parameter is a "knockback vector" we could use.
-    /// Alternatively, pass in (Vector3 direction, float force).
-    /// </summary>
-    public void TakeDamage(int damage, Vector3 knockback = default)
+    public void TakeDamage(int damage, Vector3 knockbackVector)
     {
+        // Subtract HP
         currentHealth -= damage;
         if (currentHealth < 0) currentHealth = 0;
 
-        // optional knockback
-        if (knockback != Vector3.zero)
+        // Start knockback logic
+        if (knockbackVector != Vector3.zero)
         {
-            Rigidbody rb = GetComponent<Rigidbody>();
-            if (rb) rb.AddForce(knockback, ForceMode.Impulse);
+            if (knockbackRoutine != null)
+            {
+                StopCoroutine(knockbackRoutine);
+            }
+            knockbackRoutine = StartCoroutine(DoKnockback(knockbackVector));
         }
 
+        // Check for death
         if (currentHealth <= 0)
         {
             Die();
         }
     }
 
+    /// <summary>
+    /// Since we're Kinematic, AddForce won't work. 
+    /// Instead, manually move the enemy over knockbackDuration.
+    /// </summary>
+    private IEnumerator DoKnockback(Vector3 knockbackVector)
+    {
+
+        float elapsed = 0f;
+        // We interpret knockbackVector as the total displacement over the entire knockbackDuration.
+        Vector3 startPos = transform.position;
+        Vector3 endPos = startPos + knockbackVector;
+
+        // Simple linear interpolation from startPos to endPos
+        while (elapsed < knockbackDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / knockbackDuration);
+
+            // Lerp towards the end position
+            transform.position = Vector3.Lerp(startPos, endPos, t);
+
+            yield return null;
+        }
+
+        // Optionally re-enable your AI or other movement
+        // if (ai) ai.enabled = true;
+    }
+
     private void Die()
     {
-        // Optionally trigger a death animation before destroying
         Debug.Log($"{name} died!");
 
-        // spawn item
         if (itemToSpawn)
         {
             Instantiate(itemToSpawn, transform.position, Quaternion.identity);
         }
-
-        // Wait a short delay to allow animation, then destroy
         Destroy(gameObject, destroyDelay);
     }
 }

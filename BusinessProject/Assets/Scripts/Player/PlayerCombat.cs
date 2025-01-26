@@ -6,7 +6,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private AttackBarController attackBar;
     [SerializeField] private float attackCooldown = 2f;
     [SerializeField] private Transform weaponPivot;
-    [SerializeField] private float weaponRange = 1.5f;  // bigger than enemy’s attack range
+    [SerializeField] private float weaponRange = 1.5f;  // bigger than enemy’s range
     [SerializeField] private LayerMask enemyLayer;
 
     [Header("Damage Values")]
@@ -41,9 +41,8 @@ public class PlayerCombat : MonoBehaviour
     private void StartAttack()
     {
         isAttacking = true;
-        // Show the bar above the player
         attackBar.gameObject.SetActive(true);
-        attackBar.StartArrowMovement(); // might be your own method to reset the arrow
+        attackBar.StartArrowMovement();
     }
 
     private void EndAttack()
@@ -51,13 +50,13 @@ public class PlayerCombat : MonoBehaviour
         isAttacking = false;
         attackBar.gameObject.SetActive(false);
 
-        // Check if arrow landed in a red zone
+        // Check if arrow landed in red zone
         bool success = attackBar.WasArrowInRedZone();
 
         int damageToDeal = success ? perfectDamage : basicDamage;
         float knockbackToApply = success ? perfectKnockback : basicKnockback;
 
-        // Attempt to strike enemies in front of the weaponPivot
+        // Attempt to strike enemies in range
         AttemptDealDamage(damageToDeal, knockbackToApply);
 
         // Start cooldown
@@ -66,21 +65,17 @@ public class PlayerCombat : MonoBehaviour
 
     private void AttemptDealDamage(int damage, float knockbackForce)
     {
-        // We can do a sphere or box overlap to detect enemies in range.
-        // Alternatively use a weapon collider. Here, we do a simple sphere check:
         Collider[] hits = Physics.OverlapSphere(weaponPivot.position, weaponRange, enemyLayer);
 
         foreach (Collider c in hits)
         {
-            // We might have an EnemyHealth script
             EnemyHealth eHealth = c.GetComponent<EnemyHealth>();
             if (eHealth != null)
             {
-                // apply damage
-                eHealth.TakeDamage(damage,
-                    (c.transform.position - transform.position).normalized * knockbackForce);
+                // Direction from Player -> Enemy
+                Vector3 knockbackDir = (c.transform.position - transform.position).normalized * knockbackForce;
+                eHealth.TakeDamage(damage, knockbackDir);
 
-                // e.g. we pass a combined "knockback vector" to the enemy.
                 Debug.Log("Enemy got HIT");
             }
         }
