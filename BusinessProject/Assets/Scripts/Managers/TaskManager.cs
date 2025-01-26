@@ -33,6 +33,11 @@ public class TaskManager : MonoBehaviour
         }
 
         // Initialize tasks here to ensure they're available before Start methods run
+        //InitializeTasks();
+    }
+
+    private void Start()
+    {
         InitializeTasks();
     }
 
@@ -61,7 +66,7 @@ public class TaskManager : MonoBehaviour
         if (!tasks.ContainsKey(task.Data.TaskID))
         {
             tasks.Add(task.Data.TaskID, task);
-            Debug.Log($"Task '{task.Data.Title}' added to TaskManager.");
+            //Debug.Log($"Task '{task.Data.Title}' added to TaskManager.");
         }
         else
         {

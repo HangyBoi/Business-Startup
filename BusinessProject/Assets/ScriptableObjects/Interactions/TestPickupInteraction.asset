@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: TestPickupInteraction
   m_EditorClassIdentifier: Assembly-CSharp::PickupInteractionData
-  interactionName: TestPickup
-  popupText: Cube
+  interactableName: Cube
   icon: {fileID: 21300000, guid: 3b589b6d58eeb534ebc104392ecb36d0, type: 3}
-  interactionType: 0
-  itemName: TestPickup
   destroyOnInteract: 1
