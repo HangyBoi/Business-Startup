@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
@@ -18,11 +19,22 @@ public class InteractionManager : MonoBehaviour
         else Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        Interactable.InteractableDestroyed += TriggerInteractableExitEvent;
+    }
+
+    private void OnDisable()
+    {
+        Interactable.InteractableDestroyed -= TriggerInteractableExitEvent;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         Interactable interactable = other.GetComponent<Interactable>();
         if (interactable != null)
         {
+            //Debug.Log($"Interactable '{other.name}' detected.");
             currentInteractable = interactable;
             OnInteractableDetected?.Invoke(interactable);
         }
@@ -31,19 +43,25 @@ public class InteractionManager : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Interactable interactable = other.GetComponent<Interactable>();
-        if (interactable != null && interactable == currentInteractable)
+        if (interactable != null)
         {
-            OnInteractableExited?.Invoke(interactable);
-            currentInteractable = null;
+            TriggerInteractableExitEvent(interactable);
         }
     }
 
     private void Update()
     {
-        // Handle interaction input (e.g., pressing 'E')
-        if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
+        // Handle interaction input (e.g., pressing 'F')
+        if (currentInteractable != null && Input.GetKeyDown(KeyCode.F))
         {
             currentInteractable.OnInteract();
+        }
+    }
+
+    private void TriggerInteractableExitEvent(Interactable interactable)
+    {
+        if (interactable == currentInteractable)
+        {
             OnInteractableExited?.Invoke(currentInteractable);
             currentInteractable = null;
         }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 // TaskStatus.cs
 public enum TaskStatus
@@ -45,7 +46,7 @@ public class Task : MonoBehaviour
         if (Status == TaskStatus.NotAccepted)
         {
             Status = TaskStatus.Accepted;
-            Debug.Log($"Task '{Data.Title}' accepted.");
+            //Debug.Log($"Task '{Data.Title}' accepted.");
         }
         else
         {
@@ -73,11 +74,11 @@ public class Task : MonoBehaviour
             {
                 Status = TaskStatus.Completed;
                 CurrentProgress = Data.RequiredProgress;
-                Debug.Log($"Task '{Data.Title}' completed!");
+                //Debug.Log($"Task '{Data.Title}' completed!");
                 // Optionally, trigger rewards or notifications here
             }
 
-            Debug.Log($"Task '{Data.Title}' progress: {CurrentProgress}/{Data.RequiredProgress}");
+            //Debug.Log($"Task '{Data.Title}' progress: {CurrentProgress}/{Data.RequiredProgress}");
         }
         else
         {

@@ -15,10 +15,11 @@ GameObject:
   - component: {fileID: 5875144416894133793}
   - component: {fileID: 1543804732003631735}
   - component: {fileID: 8763325443740835379}
+  - component: {fileID: 3830104623276190047}
   - component: {fileID: 7880466855035521660}
   - component: {fileID: 3681988780398591007}
   - component: {fileID: 9006516504645835214}
-  - component: {fileID: 3830104623276190047}
+  - component: {fileID: 4045752183279658190}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -115,6 +116,7 @@ MonoBehaviour:
   target: {fileID: 0}
   detectionRange: 2.2
   attackRange: 1.2
+  unDetectionRangeMultiplier: 2
 --- !u!114 &1543804732003631735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +143,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stateID: 
+--- !u!114 &3830104623276190047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638545251071711920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccacb4959af734f46be87f2233553167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateID: 
+  wayPointsObj: {fileID: 0}
 --- !u!114 &7880466855035521660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stateID: 
   damageAmount: 1
---- !u!114 &3830104623276190047
+  knockbackForce: 3
+--- !u!114 &4045752183279658190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,11 +207,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2638545251071711920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccacb4959af734f46be87f2233553167, type: 3}
+  m_Script: {fileID: 11500000, guid: cd288506da1a48941bbe9ab37a958e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateID: 
-  wayPointsObj: {fileID: 0}
+  maxHealth: 6
+  itemToSpawn: {fileID: 8505560822873570727, guid: db2dcf3cf50406b41ad8ed65171893e0, type: 3}
+  destroyDelay: 0.5
+  knockbackDuration: 0.2
 --- !u!1 &3437615101070909304
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +225,6 @@ GameObject:
   - component: {fileID: 1328305412004985407}
   - component: {fileID: 149030979261045639}
   - component: {fileID: 4166442779004166246}
-  - component: {fileID: 8225613145836272755}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -249,7 +267,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -294,24 +312,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freezeXZAxis: 0
---- !u!65 &8225613145836272755
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3437615101070909304}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 3.34, y: 3.1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}

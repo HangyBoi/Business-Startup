@@ -50,7 +50,7 @@ public class AttackBarController : MonoBehaviour
 
     public bool WasArrowInRedZone()
     {
-        // isActive = false; // optionally freeze arrow after checking
+        isActive = false; // optionally freeze arrow after checking
         // Check if arrowPos was inside any red zone
         foreach (var (start, end) in zoneRanges)
         {
