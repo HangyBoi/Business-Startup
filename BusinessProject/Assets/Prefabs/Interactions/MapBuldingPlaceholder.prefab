@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6371750050067641622}
   - component: {fileID: 4143685832843293162}
   - component: {fileID: 4587833924987417347}
-  - component: {fileID: 597970547883025865}
+  - component: {fileID: 4226317246243306273}
   m_Layer: 0
   m_Name: MapBuldingPlaceholder
   m_TagString: Untagged
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &597970547883025865
+--- !u!114 &4226317246243306273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3826519176871973673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3122021ad08be4a758a04b53a0944a32, type: 3}
+  m_Script: {fileID: 11500000, guid: 278152d42a3544a8b9b9b216a8fb67ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactableID: 1
