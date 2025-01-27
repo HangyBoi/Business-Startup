@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 509902790485001520}
   - component: {fileID: 1214268022755707451}
   - component: {fileID: 3929499988406053940}
-  - component: {fileID: 8738977838393358917}
+  - component: {fileID: 7391997916999084059}
   m_Layer: 0
   m_Name: PickUp
   m_TagString: Untagged
@@ -196,7 +196,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.78
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8738977838393358917
+--- !u!114 &7391997916999084059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
