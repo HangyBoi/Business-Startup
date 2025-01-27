@@ -5,6 +5,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
 
     private Rigidbody playerRigidbody;
+    private bool canMove = true; // Flag to control player movement.
+
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
+    }
 
     void Start()
     {
@@ -13,37 +19,45 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Check if movement is allowed
+        if (!canMove)
+        {
+            // Stop the player's velocity if movement is disabled
+            playerRigidbody.velocity = Vector3.zero;
+            return;
+        }
+
+        // Get input axes
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         // Create movement vector
         Vector3 moveVector = new Vector3(horizontal, 0, vertical).normalized;
+
+        // Stop moving if there's no input
         if (moveVector == Vector3.zero)
         {
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            playerRigidbody.velocity = Vector3.zero;
             return;
         }
-    
+
         // Convert input vector to camera-relative movement
         Vector3 cameraForward = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
         Vector3 cameraRight = new Vector3(Camera.main.transform.right.x, 0, Camera.main.transform.right.z).normalized;
 
         // Calculate the relative movement direction
         Vector3 relativeMoveDirection = (cameraRight * moveVector.x + cameraForward * moveVector.z).normalized;
-    
+
         // Apply movement
         Vector3 newVelocity = relativeMoveDirection * moveSpeed;
         newVelocity.y = playerRigidbody.velocity.y;
-    
+
         playerRigidbody.velocity = newVelocity;
-        //transform.Translate(relativeMoveDirection * moveSpeed * Time.deltaTime, Space.World);
-    
+
         // Rotate the player to face the relative movement direction
         float targetAngle = Mathf.Atan2(relativeMoveDirection.x, relativeMoveDirection.z) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
-    
-        transform.rotation = targetRotation;
 
+        transform.rotation = targetRotation;
     }
 }
-
