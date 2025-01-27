@@ -1,35 +1,40 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MovementJoystick : MonoBehaviour
+public class VirtualJoystick : MonoBehaviour
 {
-    public RectTransform moveJoystick;           // Joystick handle
-    public RectTransform moveJoystickBackground; // Joystick background
-    public float moveJoystickRange = 50f;        // Max range of the joystick handle
-    public float smoothSpeed = 10f;              // Speed of the smoothing effect
+    [SerializeField] private RectTransform joystickBackground; // Background of the joystick
+    [SerializeField] private RectTransform joystickHandle; // Handle of the joystick
+    [SerializeField] private float maxJoystickDistance = 50f; // Maximum distance the handle can move
+    [SerializeField] private float smoothness = 10f; // Smoothness of joystick movement, adjustable in Inspector
 
-    private Vector2 currentJoystickPosition;     // Current interpolated position
+    private Vector3 defaultHandlePosition;
+
+    void Start()
+    {
+        // Save the default position of the joystick handle
+        defaultHandlePosition = joystickHandle.localPosition;
+    }
 
     void Update()
     {
-        // Get input from Horizontal and Vertical axes
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        // Get input values
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
 
-        if (moveInput != Vector2.zero)
+        // Create a movement vector based on input
+        Vector3 inputVector = new Vector3(horizontal, vertical).normalized;
+
+        // Calculate the new position of the joystick handle
+        Vector3 handlePosition = inputVector * maxJoystickDistance;
+
+        // Smoothly move the joystick handle to the new position
+        joystickHandle.localPosition = Vector3.Lerp(joystickHandle.localPosition, defaultHandlePosition + handlePosition, Time.deltaTime * smoothness);
+
+        // If no input, reset the handle to the default position
+        if (inputVector == Vector3.zero)
         {
-            // Normalize and scale input to joystick range
-            Vector2 targetPosition = moveInput.normalized * moveJoystickRange;
-
-            // Smoothly interpolate to the target position
-            currentJoystickPosition = Vector2.Lerp(currentJoystickPosition, targetPosition, Time.deltaTime * smoothSpeed);
-
-            // Update joystick position
-            moveJoystick.anchoredPosition = currentJoystickPosition;
-        }
-        else
-        {
-            // Smoothly return the joystick to center when no input
-            currentJoystickPosition = Vector2.Lerp(currentJoystickPosition, Vector2.zero, Time.deltaTime * smoothSpeed);
-            moveJoystick.anchoredPosition = currentJoystickPosition;
+            joystickHandle.localPosition = Vector3.Lerp(joystickHandle.localPosition, defaultHandlePosition, Time.deltaTime * smoothness);
         }
     }
 }
