@@ -459,11 +459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a14af1b8a254aaaa84a77a0f60fa2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupPrefab: {fileID: 2876067857580254336, guid: 83bc485ee686b446987127c5ee2f61dd, type: 3}
-  inventorySlotPrefab: {fileID: 4350849170550963027, guid: 6bc4695d889614da6abded9e28af82a4, type: 3}
-  taskTitleText: {fileID: 7518539499555505483}
-  taskProgressionText: {fileID: 7724109991734895795}
-  itemsPanel: {fileID: 2529599291613959466}
+  interactibleUiController: {fileID: 0}
+  taskUiController: {fileID: 0}
+  invUiController: {fileID: 0}
+  mapUiController: {fileID: 0}
+  currentUIElement: {fileID: 0}
 --- !u!1 &2085551492748833143
 GameObject:
   m_ObjectHideFlags: 0
