@@ -17,24 +17,3 @@ public abstract class InteractionData : ScriptableObject
         interactionType = type;
     }
 }
-
-// Pickup InteractionData
-[CreateAssetMenu(menuName = "Interaction/Pickup")]
-public class PickupInteractionData : InteractionData
-{
-    public bool destroyOnInteract; 
-    private void OnValidate()
-    {
-        SetInteractionType(InteractionType.Pickup);
-    }
-}
-
-// Talk InteractionData
-[CreateAssetMenu(menuName = "Interaction/Map")]
-public class MapInteractionData : InteractionData
-{
-    private void OnValidate()
-    {
-        SetInteractionType(InteractionType.Map);
-    }
-}

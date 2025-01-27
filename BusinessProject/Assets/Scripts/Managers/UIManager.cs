@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Unity.VisualScripting;
 
@@ -5,12 +6,12 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager uiManager { get; private set; }
 
-    [SerializeField] private InteractableUI interactibleUiController;
-    [SerializeField] private TasksUI taskUiController;
-    [SerializeField] private InventoryUI invUiController;
-    public MapUI mapUiController;
+    private InteractableUI interactibleUiController;
+    private TasksUI taskUiController;
+    private InventoryUI invUiController;
+    [NonSerialized] public MapUI mapUiController;
 
-    public GameObject currentUIElement;
+    [NonSerialized] public GameObject currentUIElement;
 
     private void Awake()
     {
@@ -29,6 +30,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         // Subscribe to InteractionManager events
+        interactibleUiController = GetComponent<InteractableUI>();
         if (interactibleUiController && InteractionManager.interactionManager != null)
         {
             InteractionManager.interactionManager.OnInteractableDetected += interactibleUiController.HandleInteractableDetected;
@@ -40,6 +42,7 @@ public class UIManager : MonoBehaviour
         }
         
         // Subscribe to TaskManager events
+        taskUiController = GetComponent<TasksUI>();
         if (taskUiController && TaskManager.taskManager != null)
         {
             TaskManager.OnTaskAccepted += taskUiController.HandleTaskAccepted;
@@ -52,6 +55,7 @@ public class UIManager : MonoBehaviour
         }
         
         // Subscribe to Inventory events
+        invUiController = GetComponent<InventoryUI>();
         if (invUiController && Inventory.inventory != null)
         {
             Inventory.ItemAddedToInventory += invUiController.ReinitializeInventory;
@@ -60,6 +64,9 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("Inventory is null!");
         }
+        
+        //Init map controller
+        mapUiController = GetComponent<MapUI>();
     }
 
     private void OnDisable()
