@@ -20,7 +20,6 @@ GameObject:
   - component: {fileID: 7880466855035521660}
   - component: {fileID: 3681988780398591007}
   - component: {fileID: 9006516504645835214}
-  - component: {fileID: 3830104623276190047}
   - component: {fileID: 3545138107321145813}
   - component: {fileID: 4045752183279658190}
   m_Layer: 0
@@ -229,20 +228,6 @@ MonoBehaviour:
   _stateID: 
   damageAmount: 1
   knockbackForce: 3
---- !u!114 &4045752183279658190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2638545251071711920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd288506da1a48941bbe9ab37a958e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stateID: 
-  wayPointsObj: {fileID: 0}
 --- !u!114 &3545138107321145813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,9 +246,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0cc40edc70b55c749b6c58ec01ef4dcb, type: 3}
   - {fileID: 8300000, guid: eaca76a51cc98a14bb29a5907543aee0, type: 3}
   - {fileID: 8300000, guid: 0fc78011199cfd147898d8a7df8e7144, type: 3}
+  - {fileID: 8300000, guid: 22d75f7ab7e6a4e4eb1fe41f311a0cea, type: 3}
+  - {fileID: 8300000, guid: 80346ee03e3d7154b874539a86ad6ff0, type: 3}
   clipVolume: 0.15
+--- !u!114 &4045752183279658190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638545251071711920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd288506da1a48941bbe9ab37a958e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxHealth: 6
-  itemToSpawn: {fileID: 8505560822873570727, guid: db2dcf3cf50406b41ad8ed65171893e0, type: 3}
+  itemToSpawn: {fileID: 0}
   destroyDelay: 0.5
   knockbackDuration: 0.2
 --- !u!1 &3437615101070909304
@@ -277,6 +276,7 @@ GameObject:
   - component: {fileID: 1328305412004985407}
   - component: {fileID: 149030979261045639}
   - component: {fileID: 4166442779004166246}
+  - component: {fileID: 8225613145836272755}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged

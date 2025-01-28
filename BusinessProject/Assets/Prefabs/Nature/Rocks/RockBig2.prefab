@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2429394388678377512}
   - component: {fileID: 5164352471849145286}
+  - component: {fileID: 3112927783208843776}
   m_Layer: 0
   m_Name: RockBig2
   m_TagString: Untagged
@@ -170,7 +171,30 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 6.297864, y: 5.5827503, z: 1}
   m_Center: {x: 0.1261859, y: 2.9495144, z: 0}
+--- !u!136 &3112927783208843776
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8654527868590219471}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.54
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.5, z: 0}

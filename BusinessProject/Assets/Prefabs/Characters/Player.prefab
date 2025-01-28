@@ -235,8 +235,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d704a6e50dcf9ec49b6ef477a66b8335, type: 3}
   - {fileID: 8300000, guid: 699cd9afc370d4d44bc0fae8d8e0d49b, type: 3}
   - {fileID: 8300000, guid: 98588b8000624b4489da25bc909481f9, type: 3}
-  - {fileID: 8300000, guid: fc5ab6f9202e51543826dee9295fb864, type: 3}
-  - {fileID: 8300000, guid: f2e4ea37688d6084583a0c44dc451aa2, type: 3}
   clipVolume: 1
 --- !u!114 &494546851615259843
 MonoBehaviour:
