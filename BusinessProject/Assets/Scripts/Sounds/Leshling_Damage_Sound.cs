@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Auka_Pikcup_Sound : MonoBehaviour
+public class Leshling_Damage_Sound : MonoBehaviour
 {
-    public AudioSource audioSource;
+    //public AudioSource audioSource;
     public AudioClip[] audioClips;
     [Range(0f, 1f)]
     public float clipVolume = 1.0f;
 
-    void OnDestroy()
+    public void PlayDamageSound()
     {
-        
+
         //choose random clip
         AudioClip randomClip = audioClips[Random.Range(0, audioClips.Length)];
 
@@ -20,4 +20,3 @@ public class Auka_Pikcup_Sound : MonoBehaviour
 
     }
 }
-

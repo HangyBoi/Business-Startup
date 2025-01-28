@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8755285212979103320}
   - component: {fileID: 7222300253425201737}
   - component: {fileID: 8376132618749752311}
+  - component: {fileID: 5599989683157889167}
   m_Layer: 0
   m_Name: Auka
   m_TagString: Untagged
@@ -86,6 +87,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableID: 2
   interactionData: {fileID: 11400000, guid: 6c494bccc4ff242a49addebac4144b81, type: 2}
+--- !u!114 &5599989683157889167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327251958255390660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fac6b2dac728b44b9a2dcc52511d94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 431294113093867729}
+  audioClips:
+  - {fileID: 8300000, guid: 3f0034a7647f51742aaa7490497b4dc1, type: 3}
+  - {fileID: 8300000, guid: 533055e3a458437488a59508848621c1, type: 3}
+  - {fileID: 8300000, guid: 253f27bd7161251428efc00fd6df61ff, type: 3}
+  clipVolume: 0.5
 --- !u!1 &1910017368240600574
 GameObject:
   m_ObjectHideFlags: 0
