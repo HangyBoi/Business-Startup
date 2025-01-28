@@ -14,12 +14,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableName: Talk
   icon: {fileID: 21300000, guid: de151454ac92042bfb254f5c3259c5b6, type: 3}
-  speakers:
+  speakersStart:
   - Babushka
   - You
-  dialogue:
-  - 'Hello '
-  - Hello babushka
-  portraits:
+  dialogueStart:
+  - Hello son
+  - Hello BABUSHKA
+  portraitsStart:
   - {fileID: 21300000, guid: de151454ac92042bfb254f5c3259c5b6, type: 3}
-  - {fileID: 1133926810, guid: fb1002a29450743ce861c63f5e970482, type: 3}
+  - {fileID: 1927116010, guid: 5f39825622d972343be6615ec733e3f6, type: 3}
+  speakersInProgress:
+  - You
+  - Babushka
+  dialogueInProgress:
+  - What do i do
+  - bring pickups
+  portraitsInProgress:
+  - {fileID: -1195053699, guid: 81e702a38bb143c4bb18c6f2761ec54c, type: 3}
+  - {fileID: 21300000, guid: de151454ac92042bfb254f5c3259c5b6, type: 3}
+  speakersFinish:
+  - You
+  - Babushka
+  dialogueFinish:
+  - I brought pickups
+  - Ok
+  portraitsFinish:
+  - {fileID: -1840502214, guid: 81e702a38bb143c4bb18c6f2761ec54c, type: 3}
+  - {fileID: 21300000, guid: de151454ac92042bfb254f5c3259c5b6, type: 3}
