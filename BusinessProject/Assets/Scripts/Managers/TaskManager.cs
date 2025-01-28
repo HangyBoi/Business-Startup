@@ -103,11 +103,25 @@ public class TaskManager : MonoBehaviour
         {
             Task task = tasks[taskID];
             task.Complete();
+            OnTaskCompleted?.Invoke(task);
+        }
+        else
+        {
+            Debug.LogWarning($"Task with ID '{taskID}' not found.");
+        }
+    }
+    
+    public void FinishTask(string taskID)
+    {
+        if (tasks.ContainsKey(taskID))
+        {
+            Task task = tasks[taskID];
+            task.Finish();
             if (currentTask == task)
             {
                 currentTask = null;
             }
-            OnTaskCompleted?.Invoke(task);
+            OnTaskFinished?.Invoke(task);
         }
         else
         {

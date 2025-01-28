@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerRigidbody;
     private Animator animator;
 
+    public bool isActive = true;
+
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
@@ -20,7 +22,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(isActive) Move();
+    }
 
+    private void Move()
+    {
         // Get input axes
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -62,4 +68,5 @@ public class PlayerMovement : MonoBehaviour
 
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
     }
+    
 }

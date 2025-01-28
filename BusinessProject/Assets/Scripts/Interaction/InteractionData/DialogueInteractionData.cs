@@ -4,16 +4,19 @@ using UnityEngine;
 public class DialogueInteractionData : InteractionData
 {
     //Dialogue content
-    [SerializeField] private string[] speakers;
-    [SerializeField] private string[] dialogue;
-    [SerializeField] private Sprite[] portraits;
+    [SerializeField] public string[] speakersStart;
+    [SerializeField] public string[] dialogueStart;
+    [SerializeField] public Sprite[] portraitsStart;
+    
+    [SerializeField] public string[] speakersInProgress;
+    [SerializeField] public string[] dialogueInProgress;
+    [SerializeField] public Sprite[] portraitsInProgress;
+    
+    [SerializeField] public string[] speakersFinish;
+    [SerializeField] public string[] dialogueFinish;
+    [SerializeField] public Sprite[] portraitsFinish;
     private void OnValidate()
     {
         SetInteractionType(InteractionType.Dialogue);
     }
-    
-    // Public getters for encapsulation
-    public string[] Speakers => speakers;
-    public string[] DialogueLines => dialogue;
-    public Sprite[] Portraits => portraits;
 }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7448b5cf485c44092a199b60476a30d6, type: 3}
   m_Name: NewTaskData
   m_EditorClassIdentifier: 
-  TaskID: 2
-  Title: Collect
+  TaskID: 3
+  Title: TalkToBabushka
   Description: 
   RequiredProgress: 24
   RequiresKeyItem: 0

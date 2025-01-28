@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
             TaskManager.OnTaskAccepted += taskUiController.HandleTaskAccepted;
             TaskManager.OnTaskProgressed += taskUiController.HandleTaskProgressed;
             TaskManager.OnTaskCompleted += taskUiController.HandleTaskCompleted;
+            TaskManager.OnTaskFinished += taskUiController.HandleTaskFinished;
         }
         else
         {
@@ -82,6 +83,7 @@ public class UIManager : MonoBehaviour
             TaskManager.OnTaskAccepted -= taskUiController.HandleTaskAccepted;
             TaskManager.OnTaskProgressed -= taskUiController.HandleTaskProgressed;
             TaskManager.OnTaskCompleted -= taskUiController.HandleTaskCompleted;
+            TaskManager.OnTaskFinished -= taskUiController.HandleTaskFinished;
         }
         
         if (invUiController && Inventory.inventory != null)

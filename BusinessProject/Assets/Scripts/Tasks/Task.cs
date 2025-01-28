@@ -4,11 +4,11 @@ using UnityEngine;
 public enum TaskStatus
 {
     NotAccepted,
-    Accepted,
     InProgress,
     Completed,
     Finished
 }
+
 public class Task : MonoBehaviour
 {
     [Tooltip("Task data asset")]
@@ -45,7 +45,7 @@ public class Task : MonoBehaviour
     {
         if (Status == TaskStatus.NotAccepted)
         {
-            Status = TaskStatus.Accepted;
+            Status = TaskStatus.InProgress;
             //Debug.Log($"Task '{Data.Title}' accepted.");
         }
         else
@@ -60,7 +60,7 @@ public class Task : MonoBehaviour
     /// <param name="amount">Amount to increase progress by.</param>
     public void UpdateProgress(int amount)
     {
-        if (Status == TaskStatus.Accepted || Status == TaskStatus.InProgress)
+        if (Status == TaskStatus.InProgress)
         {
             CurrentProgress += amount;
             CurrentProgress = Mathf.Clamp(CurrentProgress, 0, Data.RequiredProgress);
@@ -101,6 +101,19 @@ public class Task : MonoBehaviour
         else
         {
             Debug.LogWarning($"Task '{Data.Title}' is already completed.");
+        }
+    }
+    public void Finish()
+    {
+        if (Status == TaskStatus.Completed)
+        {
+            Status = TaskStatus.Finished;
+            Debug.Log($"Task '{Data.Title}' finished.");
+            // Optionally, trigger rewards or notifications here
+        }
+        else
+        {
+            Debug.LogWarning($"Task '{Data.Title}' is not yet completed.");
         }
     }
 
