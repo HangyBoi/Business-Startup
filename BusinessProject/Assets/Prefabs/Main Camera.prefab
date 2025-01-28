@@ -107,10 +107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  cameraPitch: 30
-  zCameraOffset: -3
+  cameraPitch: 49.6
+  zCameraOffset: -13.9
   yCameraOffset: 1
-  rotationStep: 90
+  rotationStep: 45
   rotationDuration: 0.2
 --- !u!114 &-4716100994337400159
 MonoBehaviour:

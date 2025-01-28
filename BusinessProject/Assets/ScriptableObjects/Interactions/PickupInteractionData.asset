@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PickupInteractionData
   m_EditorClassIdentifier: 
   interactableName: Pickup
-  icon: {fileID: 21300000, guid: 3730ac0c1acf06d46a3447c37b9fc579, type: 3}
+  icon: {fileID: 21300000, guid: dbd3937792f88324b81f9b529b19b7e1, type: 3}
   destroyOnInteract: 1

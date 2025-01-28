@@ -45,8 +45,8 @@ GameObject:
   - component: {fileID: 7735366298543649586}
   - component: {fileID: 2218186809727324355}
   - component: {fileID: 5066616022220081175}
-  - component: {fileID: 5184513619504657332}
   - component: {fileID: 8571972768742460713}
+  - component: {fileID: 5184513619504657332}
   - component: {fileID: 2194638940736078049}
   - component: {fileID: 494546851615259843}
   m_Layer: 3
@@ -175,21 +175,9 @@ MonoBehaviour:
   maxHealth: 5
   invulnerabilityDuration: 2
   knockbackDuration: 0.25
-  playerRigidbody: {fileID: 3373192850786543242}
+  playerRigidbody: {fileID: 0}
   spriteRenderer: {fileID: 1682598183658726295}
   blinkInterval: 0.2
---- !u!114 &5184513619504657332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794537910944158483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bfa05ac922fd4b1986ebaafc97bd07a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8571972768742460713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,17 +190,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96fe9b173fe1d84086c55215b466bd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackBar: {fileID: 0}
+  attackBar: {fileID: 350005454662898168}
   attackCooldown: 2
   weaponPivot: {fileID: 0}
   weaponRange: 1.5
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   basicDamage: 1
   perfectDamage: 3
   basicKnockback: 4
   perfectKnockback: 6
+--- !u!114 &5184513619504657332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794537910944158483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bfa05ac922fd4b1986ebaafc97bd07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2194638940736078049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c0f9666daaac4284babc57aef03578b1, type: 3}
   - {fileID: 8300000, guid: 4a3d0a10372a45f448c0f1c0a4c5fa29, type: 3}
   clipVolume: 1
-  attackBar: {fileID: 0}
+  attackBar: {fileID: 350005454662898168}
   attackCooldown: 2
 --- !u!1 &6238843629070724432
 GameObject:
@@ -291,7 +291,7 @@ Transform:
   m_GameObject: {fileID: 6238843629070724432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000012878154, y: 0, z: 1.4999981}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -418,7 +418,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6753269851509698494}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.00008726013, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -618,7 +618,7 @@ Animator:
   m_GameObject: {fileID: 7384736712007263061}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 880ebf8716ac74c26ad0489f4f93f584, type: 2}
+  m_Controller: {fileID: 9100000, guid: 157cced43cb593443825e463dbae2b29, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -643,6 +643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTransform: {fileID: 88024803668176805}
   backAngle: 45
+  playerCombatRef: {fileID: 8571972768742460713}
 --- !u!114 &7842589161579459379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,6 +754,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
+--- !u!114 &350005454662898168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3549092379652955898, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
+  m_PrefabInstance: {fileID: 3862840175669481218}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c004ee4ca34b345926c5ea5466d683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &360079536156208281 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3559201337362703259, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}

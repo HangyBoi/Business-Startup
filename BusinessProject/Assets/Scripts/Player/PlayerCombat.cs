@@ -29,22 +29,22 @@ public class PlayerCombat : MonoBehaviour
             Debug.LogWarning("Animator component not found on PlayerCombat.");
         }
     }
-
     private void Update()
     {
         // If on cooldown, do nothing
         if (Time.time < nextAttackAllowedTime) return;
 
         // Mouse down => start the attack
-        if (Input.GetMouseButtonDown(0) && !isAttacking)
+        if (Input.GetMouseButtonDown(0))
         {
-            StartAttack();
-        }
-
-        // Mouse up => finalize the attack
-        if (Input.GetMouseButtonUp(0) && isAttacking)
-        {
-            EndAttack();
+            if (!isAttacking)
+            {
+                StartAttack();
+            }
+            else
+            {
+                EndAttack();
+            }
         }
     }
 
@@ -53,16 +53,12 @@ public class PlayerCombat : MonoBehaviour
         isAttacking = true;
         attackBar.gameObject.SetActive(true);
         attackBar.StartArrowMovement();
-
-        // **Do not trigger the attack animation here**
-        // animator.SetBool("isAttacking", true);
     }
 
     private void EndAttack()
     {
         attackBar.gameObject.SetActive(false);
 
-        // **Trigger the attack animation here instead**
         if (animator != null)
         {
             animator.SetBool("IsAttacking", true);
@@ -79,15 +75,15 @@ public class PlayerCombat : MonoBehaviour
 
         // Start cooldown
         nextAttackAllowedTime = Time.time + attackCooldown;
-
+        isAttacking = false;
     }
 
-    // **This method will be called via an Animation Event at the end of the attack animation**
+    // **This method will be called via an Animation Event from the SpriteAnimDirController at the end of the attack animation**
     public void OnAttackAnimationEnd()
     {
         if (animator != null)
         {
-            animator.SetBool("isAttacking", false);
+            animator.SetBool("IsAttacking", false);
         }
 
         isAttacking = false;

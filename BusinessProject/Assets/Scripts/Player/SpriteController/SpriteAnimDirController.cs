@@ -12,6 +12,8 @@ public class SpriteAnimDirController : MonoBehaviour
 
     private Vector2 animationDirection;
 
+    public PlayerCombat playerCombatRef;
+
     private void Start()
     {
         sideAngle = 180 - backAngle;
@@ -62,7 +64,10 @@ public class SpriteAnimDirController : MonoBehaviour
             animator.SetFloat("MoveX", animationDirection.x);
             animator.SetFloat("MoveY", animationDirection.y);
 
-            Debug.Log($"MoveX: {animationDirection.x}, MoveY: {animationDirection.y}");
         }
     }
+    public void OnAnimationEnd()
+    {
+        playerCombatRef.OnAttackAnimationEnd();
+    } 
 }
