@@ -31,11 +31,6 @@ public class MapOverlayController : MonoBehaviour
             // Pause the game (optional)
             Time.timeScale = 0f;
 
-            // Disable player movement
-            if (playerController != null)
-            {
-                playerController.SetCanMove(false);
-            }
         }
         else
         {
@@ -45,12 +40,6 @@ public class MapOverlayController : MonoBehaviour
 
             // Resume the game (optional)
             Time.timeScale = 1f;
-
-            // Enable player movement
-            if (playerController != null)
-            {
-                playerController.SetCanMove(true);
-            }
         }
     }
 }
