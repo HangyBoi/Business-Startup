@@ -263,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 1979288453}
     - target: {fileID: 4597289201908421753, guid: ff66c344a9a3b5f44b8a4776378137f8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4597289201908421753, guid: ff66c344a9a3b5f44b8a4776378137f8, type: 3}
       propertyPath: cameraPitch
@@ -345,9 +345,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6746741285502352351, guid: ff66c344a9a3b5f44b8a4776378137f8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1146636392}
     - targetCorrespondingSourceObject: {fileID: 6746741285502352351, guid: ff66c344a9a3b5f44b8a4776378137f8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1146636387}
@@ -9007,26 +9004,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1146636392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146636386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaa414bf62c550843bd42ca389147369, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1979288453}
-  cameraPitch: 50
-  zCameraOffset: -14
-  yCameraOffset: 1
-  horizontalSensitivity: 490
-  rotationAmmount: 45
-  smoothSpeed: 5
-  lockedCam: 0
 --- !u!4 &1166942676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4359854896629303457, guid: 345ac0aeccfcc3d479ec2f692a642cd1, type: 3}
