@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerRigidbody;
     private Animator animator;
 
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
+    }
+
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
@@ -20,6 +25,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Check if movement is allowed
+        if (!canMove)
+        {
+            // Stop the player's velocity if movement is disabled
+            playerRigidbody.velocity = Vector3.zero;
+            return;
+        }
+
+        // Get input axes
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
