@@ -65,7 +65,7 @@ public class PlayerCombat : MonoBehaviour
         // **Trigger the attack animation here instead**
         if (animator != null)
         {
-            animator.SetBool("isAttacking", true);
+            animator.SetBool("IsAttacking", true);
         }
 
         // Check if arrow landed in red zone
