@@ -34,20 +34,22 @@ public class Weapon_Swing : MonoBehaviour
     {
         AudioClip randomClip;
 
-        if (attackBar.WasArrowInRedZone())
+        if (attackBar)
         {
-            // Choose a random clip from perfectSwing
-            randomClip = perfectSwing[Random.Range(0, perfectSwing.Length)];
-        }
-        else
-        {
-            // Choose a random clip from regularSwing
-            randomClip = regularSwing[Random.Range(0, regularSwing.Length)];
-        }
+            if (attackBar.WasArrowInRedZone())
+            {
+                // Choose a random clip from perfectSwing
+                randomClip = perfectSwing[Random.Range(0, perfectSwing.Length)];
+            }
+            else
+            {
+                // Choose a random clip from regularSwing
+                randomClip = regularSwing[Random.Range(0, regularSwing.Length)];
+            }
+            // Play the chosen clip
+            Debug.Log(randomClip);
 
-        // Play the chosen clip
-        Debug.Log(randomClip);
-
-        audioSource.PlayOneShot(randomClip, clipVolume);
+            audioSource.PlayOneShot(randomClip, clipVolume);
+        }
     }
 }
