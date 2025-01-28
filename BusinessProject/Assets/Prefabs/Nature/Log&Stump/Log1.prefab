@@ -130,6 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973607090789916858}
   - component: {fileID: 4396085876003532851}
+  - component: {fileID: 5397478403021818797}
   m_Layer: 0
   m_Name: Log1
   m_TagString: Untagged
@@ -170,7 +171,30 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 6.208792, y: 2.199656, z: 1.0030653}
   m_Center: {x: -0.028542757, y: 1.400172, z: 0.0015331507}
+--- !u!136 &5397478403021818797
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9161673197758879687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.25
+  m_Height: 0
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.25, z: 0}
