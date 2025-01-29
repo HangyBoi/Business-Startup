@@ -6,6 +6,7 @@ public enum InteractionType
     Pickup,
     Map,
     Dialogue,
+    Protection,
     // Add more interaction types as needed
 }
 public abstract class InteractionData : ScriptableObject

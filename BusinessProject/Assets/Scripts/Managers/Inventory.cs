@@ -35,6 +35,23 @@ public class Inventory : MonoBehaviour
         ItemAddedToInventory?.Invoke();
         // Notify TaskManager or other systems if needed
     }
+    
+    public void TakeItem(string id, int amount)
+    {
+        foreach (Interactable pItem in items.Keys)
+        {
+            if (pItem.interactableID == id)
+            {
+                items[pItem]-=amount;
+                if (items[pItem] <= 0)
+                {
+                    items.Remove(pItem);
+                }
+                ItemAddedToInventory?.Invoke();
+                return;
+            }
+        } 
+    }
 
     public bool ContainsItem(Interactable item)
     {
@@ -43,5 +60,23 @@ public class Inventory : MonoBehaviour
             if (pItem.interactableID == item.interactableID) return true;
         } 
         return false;
+    }
+    
+    public bool ContainsItemByID(string id)
+    {
+        foreach (Interactable pItem in items.Keys)
+        {
+            if (pItem.interactableID == id) return true;
+        } 
+        return false;
+    }
+    
+    public int GetAmountOf(string id)
+    {
+        foreach (Interactable pItem in items.Keys)
+        {
+            if (pItem.interactableID == id) return items[pItem];
+        } 
+        return 0;
     }
 }
