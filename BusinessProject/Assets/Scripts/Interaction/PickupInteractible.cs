@@ -9,7 +9,7 @@ public class PickupInteractable : Interactable
         Debug.Log("Handle Pickup");
         
         // Ensure TaskManager and Inventory are accessible
-        if (TaskManager.taskManager.GetCurrentTask() && interactableID == TaskManager.taskManager.GetCurrentTask().Data.TaskID)
+        if (TaskManager.taskManager &&TaskManager.taskManager.GetCurrentTask() && interactableID == TaskManager.taskManager.GetCurrentTask().Data.TaskID)
         {
             TaskManager.taskManager.UpdateTaskProgress(interactableID, 1);
         }
