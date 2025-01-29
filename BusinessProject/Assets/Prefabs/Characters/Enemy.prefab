@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 4045752183279658190}
   - component: {fileID: 3545138107321145813}
   - component: {fileID: 4852473406032188316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,10 +93,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8565234
-  m_Height: 2.50172
+  m_Radius: 1.5
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.064822435, y: -0.21067286, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &3400068507339433464
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -145,9 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  detectionRange: 2.2
-  attackRange: 1.2
-  unDetectionRangeMultiplier: 2
+  detectionRange: 10
+  attackRange: 3
+  unDetectionRangeMultiplier: 5
 --- !u!114 &1543804732003631735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a7137cd981345fd99b95caea7de783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateID: 
+  _stateID: 0
 --- !u!114 &3830104623276190047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccacb4959af734f46be87f2233553167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateID: 
-  wayPointsObj: {fileID: 1632284677045280327, guid: 78c9097136b85433980936c7260c3b64, type: 3}
+  _stateID: 1
+  wayPointsObj: {fileID: 0}
 --- !u!114 &7880466855035521660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80204d8405b3940a3a9548c0fa7df1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateID: 
+  _stateID: 2
 --- !u!114 &3681988780398591007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94143d04e3074e659282efa8a24ce72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetRange: 0.5
+  targetRange: 2
 --- !u!114 &9006516504645835214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,9 +226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd40faae71004df59004b749021f6fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _stateID: 
+  _stateID: 3
   damageAmount: 1
-  knockbackForce: 3
+  knockbackForce: 20
 --- !u!114 &4045752183279658190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +244,7 @@ MonoBehaviour:
   maxHealth: 6
   itemToSpawn: {fileID: 0}
   destroyDelay: 0.5
-  knockbackDuration: 0.2
+  knockbackDuration: 1
   onTakeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -312,7 +312,9 @@ GameObject:
   - component: {fileID: 149030979261045639}
   - component: {fileID: 4166442779004166246}
   - component: {fileID: 8225613145836272755}
-  m_Layer: 0
+  - component: {fileID: 6686567528910852649}
+  - component: {fileID: 3920463096020955692}
+  m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,6 +422,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.34, y: 3.1, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6686567528910852649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437615101070909304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b48a557fcd2c4a64870a7cb6e6bf67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &3920463096020955692
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437615101070909304}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf424046a42fc4132a7b05f38356c5a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4037756452343223262
 GameObject:
   m_ObjectHideFlags: 0
