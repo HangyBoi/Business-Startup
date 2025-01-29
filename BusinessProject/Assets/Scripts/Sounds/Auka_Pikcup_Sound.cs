@@ -9,14 +9,29 @@ public class Auka_Pikcup_Sound : MonoBehaviour
     [Range(0f, 1f)]
     public float clipVolume = 1.0f;
 
+    private AudioClip randomClip;
+
+    private void Start()
+    {
+
+        //choose random clip
+        randomClip = audioClips[Random.Range(0, audioClips.Length)];
+
+    }
+
     void OnDestroy()
     {
-        
-        //choose random clip
-        AudioClip randomClip = audioClips[Random.Range(0, audioClips.Length)];
 
         //play audio clip
         AudioSource.PlayClipAtPoint(randomClip, transform.position, clipVolume);
+
+        //chat fix - not working
+        //GameObject tempAudio = new GameObject("TempAudio");
+        //AudioSource audioSource = tempAudio.AddComponent<AudioSource>();
+        //audioSource.clip = randomClip;
+        //audioSource.volume = clipVolume;
+        //audioSource.Play();
+        //Destroy(tempAudio, randomClip.length);
 
     }
 }
