@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class Auka : MonoBehaviour
 {
     [SerializeField] private Transform observer;
+    [SerializeField] private GameObject aukaEmptyPrefab;
     [Range(1f, 20f)] [SerializeField] private float detectionRange;
     private GameObject aukaBody;
     private GameObject aukaLeaf;
@@ -14,8 +16,15 @@ public class Auka : MonoBehaviour
         if(!aukaBody) aukaBody = GameObject.Find("AukaSprite");
         if(!aukaLeaf) aukaLeaf = GameObject.Find("AukaLeafSprite");
         if(aukaLeaf) aukaLeaf.SetActive(false);
+
+        GetComponent<PickupInteractable>().PickupDestroyed += InstantiateLog;
     }
-    
+
+    private void OnDisable()
+    {
+        GetComponent<PickupInteractable>().PickupDestroyed -= InstantiateLog;
+    }
+
     void Update()
     {
         if(observer) LookForObserver();
@@ -43,5 +52,11 @@ public class Auka : MonoBehaviour
                 aukaLeaf.SetActive(false);
             }
         }
+    }
+
+    private void InstantiateLog()
+    {
+        if (aukaEmptyPrefab) Instantiate(aukaEmptyPrefab, gameObject.transform.position, Quaternion.identity);
+        Debug.Log("Instantiate empty auka.");
     }
 }
