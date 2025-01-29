@@ -49,7 +49,8 @@ GameObject:
   - component: {fileID: 5184513619504657332}
   - component: {fileID: 2194638940736078049}
   - component: {fileID: 494546851615259843}
-  m_Layer: 9
+  - component: {fileID: 7744468931019771950}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -264,6 +265,22 @@ MonoBehaviour:
   clipVolume: 1
   attackBar: {fileID: 0}
   attackCooldown: 2
+--- !u!114 &7744468931019771950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794537910944158483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc8c1f822d9939d4c8064fe3bbe12bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 4694796093186074985}
+  audioClips:
+  - {fileID: 8300000, guid: c0f9666daaac4284babc57aef03578b1, type: 3}
+  clipVolume: 1
 --- !u!1 &6238843629070724432
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class EnemyHealth : MonoBehaviour
 
     [Header("Knockback")]
     [SerializeField] private float knockbackDuration = 0.2f;
+
+    // Addition for Sound
+    public UnityEvent onTakeDamage;
 
     // Reference to the (kinematic) Rigidbody, just so you can detect or configure if needed
     private Rigidbody rb;
@@ -34,6 +38,12 @@ public class EnemyHealth : MonoBehaviour
         // Subtract HP
         currentHealth -= damage;
         if (currentHealth < 0) currentHealth = 0;
+
+        //Sound
+        if (onTakeDamage != null)
+        {
+            onTakeDamage.Invoke();
+        }
 
         // Start knockback logic
         if (knockbackVector != Vector3.zero)

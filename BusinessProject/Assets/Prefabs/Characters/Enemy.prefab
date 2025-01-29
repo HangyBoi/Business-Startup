@@ -20,8 +20,9 @@ GameObject:
   - component: {fileID: 7880466855035521660}
   - component: {fileID: 3681988780398591007}
   - component: {fileID: 9006516504645835214}
-  - component: {fileID: 3545138107321145813}
   - component: {fileID: 4045752183279658190}
+  - component: {fileID: 3545138107321145813}
+  - component: {fileID: 4852473406032188316}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -228,6 +229,37 @@ MonoBehaviour:
   _stateID: 
   damageAmount: 1
   knockbackForce: 3
+--- !u!114 &4045752183279658190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2638545251071711920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd288506da1a48941bbe9ab37a958e26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 6
+  itemToSpawn: {fileID: 0}
+  destroyDelay: 0.5
+  knockbackDuration: 0.2
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4852473406032188316}
+        m_TargetAssemblyTypeName: Leshling_Damage_Sound, Assembly-CSharp
+        m_MethodName: PlayDamageSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3545138107321145813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +281,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 22d75f7ab7e6a4e4eb1fe41f311a0cea, type: 3}
   - {fileID: 8300000, guid: 80346ee03e3d7154b874539a86ad6ff0, type: 3}
   clipVolume: 0.15
---- !u!114 &4045752183279658190
+--- !u!114 &4852473406032188316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,13 +290,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2638545251071711920}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd288506da1a48941bbe9ab37a958e26, type: 3}
+  m_Script: {fileID: 11500000, guid: bdb6b7957e985444a9b2be1482c27b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
-  itemToSpawn: {fileID: 0}
-  destroyDelay: 0.5
-  knockbackDuration: 0.2
+  audioClips:
+  - {fileID: 8300000, guid: 560cdd01aa5a7ec4b8668d3edef4b67c, type: 3}
+  - {fileID: 8300000, guid: 5beb32230e8c9964f89e65754d45b68c, type: 3}
+  - {fileID: 8300000, guid: d9fad0334d9c5f0418908cf9aac02397, type: 3}
+  - {fileID: 8300000, guid: 4033eeb17726b4044a355492da6f2dbf, type: 3}
+  - {fileID: 8300000, guid: 3c6316f3fbe162f4ca26db321a77467b, type: 3}
+  clipVolume: 1
 --- !u!1 &3437615101070909304
 GameObject:
   m_ObjectHideFlags: 0

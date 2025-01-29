@@ -40,6 +40,14 @@ public class PlayerHealth : MonoBehaviour
             OnHealthChanged += heartsUI.UpdateHearts;
             OnHealthChanged?.Invoke(currentHealth, maxHealth);
         }
+
+        //Play Damaged Sound
+        Player_Damaged_Sound damagedSound = GetComponent<Player_Damaged_Sound>();
+        if (damagedSound != null)
+        {
+            OnHealthChanged += damagedSound.PlayDamageSound;
+        }
+
     }
 
     public void TakeDamage(int damage, Vector3? knockbackDirection = null)
