@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: c3c005aa426a4f74eb25fc393df61163
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 132
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaa0ca4818d37e46adad357e395b98e
+      internalID: -1988295668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a82720f8f9011b43a743e0a24bbfe70
+      internalID: 602724232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_2
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b3f6cdbed494548a32e72f555a7e57
+      internalID: 453795233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db60c3eb7a4dac428ae38cd10f8ce99
+      internalID: 1388105671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5970611af753e4e92170abdb2cd29f
+      internalID: 441631855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2e59a8548938743a98b1d1ff2c11ce
+      internalID: 880779528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_6
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 3600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb8b731a1988764d911dda34a5ce5ad
+      internalID: -945343028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f13a0b8201f5234ebaca64e45e9494d
+      internalID: -1033731199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b948dd1649d57a54e9acab5897d1a85c
+      internalID: -1042050076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_9
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f8411b34017374ebd9e30a8a74130d
+      internalID: 102295628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52662f60c23b2e4fade86a14d369049
+      internalID: 194824419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe8b0d6c2feebf4babeba840c5a2ba0
+      internalID: -1641255100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_12
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2124f8c19e592724d9f18b9dcb0eb1e5
+      internalID: 1317206094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_13
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 3000
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d255cbfbe13c5248abf6ce43f40c591
+      internalID: 1963572056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb8c9fbb268eb443b2b271927fef2ed
+      internalID: -568161204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_15
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd10ff2405036714a9f20aaa9c18e178
+      internalID: -713259574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_16
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de2fcce69ed6e74f97c9832eea2ef75
+      internalID: 1692539487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_17
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae298795014658348b0a8345bb53efb3
+      internalID: 1669867505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_18
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47a60b30e3eb5b44893650a0b9bc72d
+      internalID: -977501086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_19
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e7342a3434542449e222dc75fafe03
+      internalID: 1250216457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_20
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 2400
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d6ceec63522eb4095d0bb8df247de2
+      internalID: 323033010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb630f0f91042043865201196a9716c
+      internalID: 188916467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_22
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c442a7a058ce1b940aa8ae8aa5537edb
+      internalID: -718677573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_23
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f511d4ab5096b438759b4c5e6e5af5
+      internalID: -951527264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_24
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cd896bfa5d24a4d9b5e0d4d24f4558
+      internalID: -1546183523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_25
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3b784b1a715c9488208ed47f2a04f8
+      internalID: 1790952530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_26
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb8a42fc1133574aae92d0e4deb7e88
+      internalID: 1904114974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_27
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 1800
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2580d8100850bac46b0230287b0c2d1e
+      internalID: -260764493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4e61ebd1076f3498574122ebf4654b
+      internalID: 1983210561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_29
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbf0ac23c2b13642a9ab4e2ead36a9f
+      internalID: 1343418629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_30
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70db490fe68aa9947953ae6f8ec3a286
+      internalID: 612997126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_31
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca69f4162e8eeb647b2696223354de7c
+      internalID: 96928526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_32
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b221515daecfef4b90ec63de2db4c2e
+      internalID: 690614584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_33
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c102a13ddddc549bd78e3f32ea73b6
+      internalID: 769372351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_34
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 1200
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc70ec2b28783545a26046408cf428b
+      internalID: -1473114576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e917b8b893f5f0b4f849864b92974325
+      internalID: -1779221979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_36
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2601ef5034d8e498dd645e7037d7b5
+      internalID: -822861475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_37
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5060816f56485f84e9841c0de6b4bc10
+      internalID: -238896340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_38
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b564d655e5bf8c6489c9d657596bac76
+      internalID: 315510084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_39
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393594c029ceb9344be41bd743a7a848
+      internalID: -1630560603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_40
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c599509f0e42e545ab0de8e3a1d7999
+      internalID: -450499756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_41
+      rect:
+        serializedVersion: 2
+        x: 2544
+        y: 600
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ac0387aa1bd014c931202985563274
+      internalID: 2138874067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165b23e91bb0ab148b13721f7b1e94ac
+      internalID: -1802107853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_43
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ceab050b67e91f4f88baa76a43e08db
+      internalID: -917100227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_44
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 0
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d908a476533dd444b27e2c7c01198e8
+      internalID: -903496544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_45
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f9e8cfcf605a8408620c9a03bc569d
+      internalID: 268727860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_46
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 0
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df87f7edb012d7147add22805ffaf115
+      internalID: -1255614372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_pine_small_2_idle_47
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 0
+        width: 424
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9424d59bf5824ec4bb6c5bc7d8f756b4
+      internalID: 1177101832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c03021c5fb04ad541b04da5ac821b8a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tree_pine_small_2_idle_0: -1988295668
+      tree_pine_small_2_idle_1: 602724232
+      tree_pine_small_2_idle_10: 194824419
+      tree_pine_small_2_idle_11: -1641255100
+      tree_pine_small_2_idle_12: 1317206094
+      tree_pine_small_2_idle_13: 1963572056
+      tree_pine_small_2_idle_14: -568161204
+      tree_pine_small_2_idle_15: -713259574
+      tree_pine_small_2_idle_16: 1692539487
+      tree_pine_small_2_idle_17: 1669867505
+      tree_pine_small_2_idle_18: -977501086
+      tree_pine_small_2_idle_19: 1250216457
+      tree_pine_small_2_idle_2: 453795233
+      tree_pine_small_2_idle_20: 323033010
+      tree_pine_small_2_idle_21: 188916467
+      tree_pine_small_2_idle_22: -718677573
+      tree_pine_small_2_idle_23: -951527264
+      tree_pine_small_2_idle_24: -1546183523
+      tree_pine_small_2_idle_25: 1790952530
+      tree_pine_small_2_idle_26: 1904114974
+      tree_pine_small_2_idle_27: -260764493
+      tree_pine_small_2_idle_28: 1983210561
+      tree_pine_small_2_idle_29: 1343418629
+      tree_pine_small_2_idle_3: 1388105671
+      tree_pine_small_2_idle_30: 612997126
+      tree_pine_small_2_idle_31: 96928526
+      tree_pine_small_2_idle_32: 690614584
+      tree_pine_small_2_idle_33: 769372351
+      tree_pine_small_2_idle_34: -1473114576
+      tree_pine_small_2_idle_35: -1779221979
+      tree_pine_small_2_idle_36: -822861475
+      tree_pine_small_2_idle_37: -238896340
+      tree_pine_small_2_idle_38: 315510084
+      tree_pine_small_2_idle_39: -1630560603
+      tree_pine_small_2_idle_4: 441631855
+      tree_pine_small_2_idle_40: -450499756
+      tree_pine_small_2_idle_41: 2138874067
+      tree_pine_small_2_idle_42: -1802107853
+      tree_pine_small_2_idle_43: -917100227
+      tree_pine_small_2_idle_44: -903496544
+      tree_pine_small_2_idle_45: 268727860
+      tree_pine_small_2_idle_46: -1255614372
+      tree_pine_small_2_idle_47: 1177101832
+      tree_pine_small_2_idle_5: 880779528
+      tree_pine_small_2_idle_6: -945343028
+      tree_pine_small_2_idle_7: -1033731199
+      tree_pine_small_2_idle_8: -1042050076
+      tree_pine_small_2_idle_9: 102295628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
