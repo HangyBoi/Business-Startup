@@ -52,10 +52,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
-  m_Height: 7
-  m_Direction: 1
-  m_Center: {x: 0, y: 3.4, z: 0}
+  m_Radius: 2
+  m_Height: 6
+  m_Direction: 0
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &1924366593803171442
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,6 +68,7 @@ GameObject:
   - component: {fileID: 5923586207162009047}
   - component: {fileID: 2351555026816741103}
   - component: {fileID: 1081005928115066912}
+  - component: {fileID: 5249911502679214603}
   m_Layer: 0
   m_Name: FlipNormalHouse_Sprite
   m_TagString: Untagged
@@ -176,3 +177,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freezeXZAxis: 0
+--- !u!114 &5249911502679214603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924366593803171442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed41d6719b5d8542a8f252de6cc8930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSprite: {fileID: 21300000, guid: 4a1d8e6fe8ab2c440b66cece98bb997b, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 18e9c3df923ef344983c6eff080bbbf0, type: 3}

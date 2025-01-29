@@ -11,7 +11,6 @@ public class Leshling_Damage_Sound : MonoBehaviour
 
     public void PlayDamageSound()
     {
-
         //choose random clip
         AudioClip randomClip = audioClips[Random.Range(0, audioClips.Length)];
 

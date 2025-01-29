@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1453974627308132165}
   - component: {fileID: 1518699048200137118}
   - component: {fileID: 1194974520655810646}
+  - component: {fileID: 8087266669403580050}
   m_Layer: 0
   m_Name: NormalHouse_Sprite
   m_TagString: Untagged
@@ -120,6 +121,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   freezeXZAxis: 0
+--- !u!114 &8087266669403580050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4206469608992564974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed41d6719b5d8542a8f252de6cc8930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalSprite: {fileID: 21300000, guid: 1d5682f7c0e431249b5dc3a57a5b8438, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 18e9c3df923ef344983c6eff080bbbf0, type: 3}
 --- !u!1 &7189203151740777042
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +187,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
-  m_Height: 7
-  m_Direction: 1
-  m_Center: {x: 0, y: 3.4, z: 0}
+  m_Radius: 2.12
+  m_Height: 6.44
+  m_Direction: 0
+  m_Center: {x: 0, y: 2, z: 0}
