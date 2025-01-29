@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 8164c7ba91cd0c840ad5c305f9b26c15
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 132
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8356d909d11bfb468206a90045a6b95
+      internalID: -319974780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2668f5b181677034e93cabbdd3bec9b4
+      internalID: -262695767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871f69eedde23dd4ea6947c81bafec9a
+      internalID: -1007906222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcd4e07c304bad42ad37cfb212c03e3
+      internalID: 520791444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_4
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058c9286653d0cd4f9497e8cee182fbb
+      internalID: 2144018611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a753bae045cb4d64ca6c203b56cd467d
+      internalID: 103064575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_6
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 4800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5c43fdefbb25946b3a9fb691e5d9f6
+      internalID: 1928850037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46adb97bcdec7844890763084e973c11
+      internalID: 907509780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ebe79ff619cc34385c49255077ac2a
+      internalID: 1495128276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650032a1690084247b5feabb3dbcbf7c
+      internalID: -693281984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d19e70f307fe345927f534fd9edda4
+      internalID: -1650923628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_11
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772d96a849c21af4bb58033d59acc45b
+      internalID: 2010120477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_12
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2175ca7242879e4b883adf11e009094
+      internalID: -1492640498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_13
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 4000
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e9a9d5db1595248bf3c4c31b3d0a7a
+      internalID: 1790138669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7da047614e2674eb85507910ac933c
+      internalID: -643064091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_15
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55948558ce3159248aa3834bf7d8aefa
+      internalID: -1848665214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_16
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1ebed1eec93734e8470f2b59b14108
+      internalID: 121924504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_17
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d981809c0df7a84eb90d2f765e15142
+      internalID: -2030525103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_18
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de19bd515bef7f748ba21eed59063bf8
+      internalID: 989651121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_19
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e62a11c1df8594da9fc486242cac59
+      internalID: 1393009176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_20
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 3200
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153d8afc69d446f4ab3d443fb13bf791
+      internalID: 1110084266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb91fea91957f24e9ea633cd386857e
+      internalID: -1138558750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_22
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f301f31786a3f4f9ddce8fca5513aa
+      internalID: 2024115725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_23
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317e944b9fa909346abb92a16d2f95b6
+      internalID: -1358955898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_24
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115fea1b89f96ba479eceae01464b33e
+      internalID: 1287235423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_25
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f622ad05cfee6934ea20b624bab52673
+      internalID: 827913074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_26
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856ab3c4e8daa624292bfc1c8a03137a
+      internalID: 1934291796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_27
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 2400
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b1591cdead1d844a4a0e9ed42e4510
+      internalID: 539123695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cd8df30ea6e5b46b16375edcafd74c
+      internalID: 980337876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_29
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e456d38205ef374408b226ad62ab40d5
+      internalID: -1180457424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_30
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed08eb61a672194468fccef10be87000
+      internalID: -1531070782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_31
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bad88a798093342bb1a34aa58b4e0c
+      internalID: -831893325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_32
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb17c1260ef967438a6fb646b51be24
+      internalID: -993525486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_33
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b4652246c9cd44c882e247f9686608
+      internalID: 1473460653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_34
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 1600
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285aca6ad08e0fe4db2d7ec85d1b897e
+      internalID: -1884997813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2379531288671241b65175fee1dec44
+      internalID: 1078842527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_36
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f25c048c91f6745981d9fdbb468642
+      internalID: -330992364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_37
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe152a59262e0d7489f0eeef77d06336
+      internalID: 1348748326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_38
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e356c626bf001fc4fbf085c380059a3a
+      internalID: 326194502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_39
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a99396fadfacb24b8d3b4beddf84f7c
+      internalID: -1929549896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_40
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4e0441a8a566c47aa6b1e8da054404
+      internalID: -1340717730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_41
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 800
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dbb842d5381f245bf5a161aed3adf2
+      internalID: -1870754965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4930cbca326d3bc48a42f17a94eb9ff6
+      internalID: 1978650366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_43
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f497235859ad15e41bae28831f41542d
+      internalID: 360534162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_44
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 0
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044ca249d19a59c4283a492b07105dd8
+      internalID: -1742900337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_45
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 0
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535bc1fbb814d1c43bee415ebe1c54b1
+      internalID: -995070298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_46
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 0
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f1be69eac587f4689c29539e799e72
+      internalID: -1626897319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tree_deciduous_big_1_idle_47
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 0
+        width: 542
+        height: 800
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea84cfc9f18e51245abf89f98d42abd8
+      internalID: -322469112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 981e45cfd1f4ad84d99c5b1d09189b93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tree_deciduous_big_1_idle_0: -319974780
+      tree_deciduous_big_1_idle_1: -262695767
+      tree_deciduous_big_1_idle_10: -1650923628
+      tree_deciduous_big_1_idle_11: 2010120477
+      tree_deciduous_big_1_idle_12: -1492640498
+      tree_deciduous_big_1_idle_13: 1790138669
+      tree_deciduous_big_1_idle_14: -643064091
+      tree_deciduous_big_1_idle_15: -1848665214
+      tree_deciduous_big_1_idle_16: 121924504
+      tree_deciduous_big_1_idle_17: -2030525103
+      tree_deciduous_big_1_idle_18: 989651121
+      tree_deciduous_big_1_idle_19: 1393009176
+      tree_deciduous_big_1_idle_2: -1007906222
+      tree_deciduous_big_1_idle_20: 1110084266
+      tree_deciduous_big_1_idle_21: -1138558750
+      tree_deciduous_big_1_idle_22: 2024115725
+      tree_deciduous_big_1_idle_23: -1358955898
+      tree_deciduous_big_1_idle_24: 1287235423
+      tree_deciduous_big_1_idle_25: 827913074
+      tree_deciduous_big_1_idle_26: 1934291796
+      tree_deciduous_big_1_idle_27: 539123695
+      tree_deciduous_big_1_idle_28: 980337876
+      tree_deciduous_big_1_idle_29: -1180457424
+      tree_deciduous_big_1_idle_3: 520791444
+      tree_deciduous_big_1_idle_30: -1531070782
+      tree_deciduous_big_1_idle_31: -831893325
+      tree_deciduous_big_1_idle_32: -993525486
+      tree_deciduous_big_1_idle_33: 1473460653
+      tree_deciduous_big_1_idle_34: -1884997813
+      tree_deciduous_big_1_idle_35: 1078842527
+      tree_deciduous_big_1_idle_36: -330992364
+      tree_deciduous_big_1_idle_37: 1348748326
+      tree_deciduous_big_1_idle_38: 326194502
+      tree_deciduous_big_1_idle_39: -1929549896
+      tree_deciduous_big_1_idle_4: 2144018611
+      tree_deciduous_big_1_idle_40: -1340717730
+      tree_deciduous_big_1_idle_41: -1870754965
+      tree_deciduous_big_1_idle_42: 1978650366
+      tree_deciduous_big_1_idle_43: 360534162
+      tree_deciduous_big_1_idle_44: -1742900337
+      tree_deciduous_big_1_idle_45: -995070298
+      tree_deciduous_big_1_idle_46: -1626897319
+      tree_deciduous_big_1_idle_47: -322469112
+      tree_deciduous_big_1_idle_5: 103064575
+      tree_deciduous_big_1_idle_6: 1928850037
+      tree_deciduous_big_1_idle_7: 907509780
+      tree_deciduous_big_1_idle_8: 1495128276
+      tree_deciduous_big_1_idle_9: -693281984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
