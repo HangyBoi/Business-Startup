@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class PickupInteractable : Interactable
 {
+    public event System.Action PickupDestroyed;
+
     protected override void Handle()
     {
         Debug.Log("Handle Pickup");
@@ -28,6 +30,7 @@ public class PickupInteractable : Interactable
         // Destroy or deactivate the GameObject based on interaction data
         if (interactionData is PickupInteractionData pIntData && pIntData.destroyOnInteract)
         {
+            PickupDestroyed?.Invoke();
             Destroy(gameObject);
         }
         else

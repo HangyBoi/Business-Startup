@@ -9,7 +9,7 @@ public class ProtectionBoon : Interactable
         if (Inventory.inventory && interactionData is ProtectionBoonData pbData)
         { 
             Debug.Log("Handle Boon");
-            if(Inventory.inventory.GetAmountOf(interactableID) >= pbData.requiredAmount) Upgarde();  
+            if(Inventory.inventory.GetAmountOf(interactableID) >= pbData.requiredAmount) Upgrade();  
         }
         else
         {
@@ -17,7 +17,7 @@ public class ProtectionBoon : Interactable
         }
     }
 
-    private void Upgarde()
+    private void Upgrade()
     {
         if (Inventory.inventory && interactionData is ProtectionBoonData pbData)
         {
