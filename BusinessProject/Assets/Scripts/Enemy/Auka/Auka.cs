@@ -41,7 +41,7 @@ public class Auka : MonoBehaviour
             new Vector2(transform.position.x, transform.position.z));
         bool isClose = (distance <= detectionRange);
         animator.SetBool("isClose", isClose);
-        Debug.Log(isClose);
+        //Debug.Log(isClose);
     }
 
     private void InstantiateLog()

@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     // Reference to the (kinematic) Rigidbody, just so you can detect or configure if needed
     private Rigidbody rb;
     private Coroutine knockbackRoutine;
-    
+
     public event System.Action OnEnemyDeath;
 
     private void Awake()
@@ -95,12 +95,19 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log($"{name} died!");
-        OnEnemyDeath?.Invoke();
+        Invoke("InvokeEnemyDeath", destroyDelay);
+        //OnEnemyDeath?.Invoke();
 
         if (itemToSpawn)
         {
             Instantiate(itemToSpawn, transform.position, Quaternion.identity);
         }
+
         Destroy(gameObject, destroyDelay);
+    }
+
+    void InvokeEnemyDeath()
+    {
+        OnEnemyDeath?.Invoke();
     }
 }
