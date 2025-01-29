@@ -7,15 +7,20 @@ public class Auka : MonoBehaviour
 {
     [SerializeField] private Transform observer;
     [SerializeField] private GameObject aukaEmptyPrefab;
-    [Range(1f, 20f)] [SerializeField] private float detectionRange;
+    [Range(1f, 20f)][SerializeField] private float detectionRange;
     private GameObject aukaBody;
     private GameObject aukaLeaf;
+
+    private Animator animator;
+
     void Start()
     {
-        if(!observer) Debug.Log("Auka has no observer assigned!");
-        if(!aukaBody) aukaBody = GameObject.Find("AukaSprite");
-        if(!aukaLeaf) aukaLeaf = GameObject.Find("AukaLeafSprite");
-        if(aukaLeaf) aukaLeaf.SetActive(false);
+        animator = GetComponent<Animator>();
+
+        if (!observer) Debug.Log("Auka has no observer assigned!");
+        if (!aukaBody) aukaBody = GameObject.Find("AukaSprite");
+        if (!aukaLeaf) aukaLeaf = GameObject.Find("AukaLeafSprite");
+        if (aukaLeaf) aukaLeaf.SetActive(false);
 
         GetComponent<PickupInteractable>().PickupDestroyed += InstantiateLog;
     }
@@ -27,7 +32,7 @@ public class Auka : MonoBehaviour
 
     void Update()
     {
-        if(observer) LookForObserver();
+        if (observer) LookForObserver();
     }
     private void OnDrawGizmos()
     {
@@ -41,16 +46,8 @@ public class Auka : MonoBehaviour
         {
             float distance = Vector2.Distance(new Vector2(observer.position.x, observer.position.z),
                 new Vector2(transform.position.x, transform.position.z));
-            if (distance <= detectionRange)
-            {
-                aukaBody.SetActive(false);
-                aukaLeaf.SetActive(true);
-            }
-            else
-            {
-                aukaBody.SetActive(true);
-                aukaLeaf.SetActive(false);
-            }
+            bool isClose = (distance <= detectionRange);
+            animator.SetBool("IsClose", isClose);
         }
     }
 

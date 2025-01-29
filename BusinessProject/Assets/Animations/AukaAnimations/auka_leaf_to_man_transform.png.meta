@@ -1,0 +1,1284 @@
+fileFormatVersion: 2
+guid: 834bb46f4a3d34628889fd73314a6ba6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 72
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7a8798735634d4b9ee7f57559b62a0
+      internalID: -708758773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_1
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1929e1e4753843c0903807f7d30a6e8
+      internalID: -305417244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_2
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8357122f5e34373b87a48991f3651f
+      internalID: -2011524205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_3
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f86285097bc4ec4af49851e8404a8a
+      internalID: -1697510914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_4
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cceddb632cbca4f35a9c421e4857edf2
+      internalID: 2032760387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_5
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87416ab7e59844cf2a603698b650d852
+      internalID: -1452620713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_6
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4d6923cff154b59bac6423995e385b
+      internalID: 1100394451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_7
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 2400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6234d1483424547e7a1cc3d489d4e820
+      internalID: 1277482638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c4d7ed4f33b4e2ca5c9828222d579a
+      internalID: -583676329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_9
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa31338a73e0419a80123c2f89c3412
+      internalID: 545448611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_10
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6770b32a34b444b1a3981621c2ce6f7
+      internalID: 907281663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_11
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbecc11b8f97345459c6178354055a3b
+      internalID: -156105549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_12
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e35045ba38cb4b29ab374f67a9cf367
+      internalID: 1857773181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_13
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a09b2457c9404ec9b1f713d74a27bd4
+      internalID: 266283003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_14
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68124591376594059b188bb003dc8440
+      internalID: -1069331696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_15
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 2000
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fb0bb679cd842038d725b17d2fb480
+      internalID: 708441181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c5435a8547b4d459c49a505e56dd58
+      internalID: 982275190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_17
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba4869f95cea4c92bad64aa5af3a165
+      internalID: -1678410671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_18
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea33cd98a4d9482f853d28e94ce191f
+      internalID: 599684640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_19
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c53dc0d1a3244879436a0347ab6272
+      internalID: -213142600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_20
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5820d4f30cf4c37a352d2fc846cfa5
+      internalID: 1967874415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_21
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9cfcd510bd441d6be214a9c85a3f7c
+      internalID: 404277506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_22
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdaf49ada2d148d580c5f9b9d4724f4
+      internalID: -1659338155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_23
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 1600
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd755990d15b745af9a93190cdb1a426
+      internalID: 1109391901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3840d4f3630844eb0a5426ee8a3f8c20
+      internalID: -1253587983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_25
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a1bbf1b624e488f850c325ff9171fc
+      internalID: -322373416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_26
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d154a862ae88c44d7b3a829faec70e13
+      internalID: 1847926314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_27
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b12b74ee17cb482c8323ac90c4affbe
+      internalID: -1039406040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_28
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50c73208e27b4939849acb324ce09eb
+      internalID: 137503932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_29
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5036e741cdf241bca1a3b52a8a4ef5c
+      internalID: 768025134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_30
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9da9307660d485bad645102e9eb85b
+      internalID: -2141314120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_31
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 1200
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a549e4c922c2d4502a2637a7597361b2
+      internalID: -1273264193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c460098180eee46679a4d0752374e74a
+      internalID: 1937692805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_33
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963653c71c52f4cf79c5099194ae6460
+      internalID: 1602483390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_34
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3aa6b5b4e5e2410ab3af5004e1a8106
+      internalID: 110479203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_35
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81482500d18414c55859f72fc4751091
+      internalID: 1006821336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_36
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c202e2bd3e145feb245d6bc8308dfa
+      internalID: 1961869727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_37
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1a606d86e964575b321d67f258be0d
+      internalID: -1625976618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_38
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63b02da10f7246fe87f0aedeb9777d6
+      internalID: 1752090187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_39
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 800
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f7c6811cff047a39aba9569c825f06
+      internalID: 414874920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721a7af2146174d2b8a5f22034d40ff2
+      internalID: -2032003866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_41
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e86f176387d64b27808a5ffe6782d5c
+      internalID: -102938761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_42
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d03df314b50c40078e02f2a58928592
+      internalID: -1637564745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_43
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c907c00cd920542068394d40d17c22c1
+      internalID: -3504670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_44
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5920fb8cf0cf74483af4bd1fcf2c9a4f
+      internalID: 261399453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_45
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2e215fb006346029673b8395751051
+      internalID: -1746630390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_46
+      rect:
+        serializedVersion: 2
+        x: 3288
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb38e5ad796294d45b7bc5e5e5d3bef2
+      internalID: 491464182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_47
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 400
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea37ab4eca2854a7fa3a21728841e43b
+      internalID: -1653862415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc4eba813ca44819ae60275b9f463ca
+      internalID: 1244019333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_49
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 0
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f707ba8940fe4bcba0139e6bbf54928
+      internalID: -37971982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_50
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 0
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d035d075145b403497359fac8571d16
+      internalID: -2103048584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auka_leaf_to_man_transform_51
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 0
+        width: 548
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e159454bc64214b7990bbca23a25902a
+      internalID: -2112245476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      auka_leaf_to_man_transform_0: -708758773
+      auka_leaf_to_man_transform_1: -305417244
+      auka_leaf_to_man_transform_10: 907281663
+      auka_leaf_to_man_transform_11: -156105549
+      auka_leaf_to_man_transform_12: 1857773181
+      auka_leaf_to_man_transform_13: 266283003
+      auka_leaf_to_man_transform_14: -1069331696
+      auka_leaf_to_man_transform_15: 708441181
+      auka_leaf_to_man_transform_16: 982275190
+      auka_leaf_to_man_transform_17: -1678410671
+      auka_leaf_to_man_transform_18: 599684640
+      auka_leaf_to_man_transform_19: -213142600
+      auka_leaf_to_man_transform_2: -2011524205
+      auka_leaf_to_man_transform_20: 1967874415
+      auka_leaf_to_man_transform_21: 404277506
+      auka_leaf_to_man_transform_22: -1659338155
+      auka_leaf_to_man_transform_23: 1109391901
+      auka_leaf_to_man_transform_24: -1253587983
+      auka_leaf_to_man_transform_25: -322373416
+      auka_leaf_to_man_transform_26: 1847926314
+      auka_leaf_to_man_transform_27: -1039406040
+      auka_leaf_to_man_transform_28: 137503932
+      auka_leaf_to_man_transform_29: 768025134
+      auka_leaf_to_man_transform_3: -1697510914
+      auka_leaf_to_man_transform_30: -2141314120
+      auka_leaf_to_man_transform_31: -1273264193
+      auka_leaf_to_man_transform_32: 1937692805
+      auka_leaf_to_man_transform_33: 1602483390
+      auka_leaf_to_man_transform_34: 110479203
+      auka_leaf_to_man_transform_35: 1006821336
+      auka_leaf_to_man_transform_36: 1961869727
+      auka_leaf_to_man_transform_37: -1625976618
+      auka_leaf_to_man_transform_38: 1752090187
+      auka_leaf_to_man_transform_39: 414874920
+      auka_leaf_to_man_transform_4: 2032760387
+      auka_leaf_to_man_transform_40: -2032003866
+      auka_leaf_to_man_transform_41: -102938761
+      auka_leaf_to_man_transform_42: -1637564745
+      auka_leaf_to_man_transform_43: -3504670
+      auka_leaf_to_man_transform_44: 261399453
+      auka_leaf_to_man_transform_45: -1746630390
+      auka_leaf_to_man_transform_46: 491464182
+      auka_leaf_to_man_transform_47: -1653862415
+      auka_leaf_to_man_transform_48: 1244019333
+      auka_leaf_to_man_transform_49: -37971982
+      auka_leaf_to_man_transform_5: -1452620713
+      auka_leaf_to_man_transform_50: -2103048584
+      auka_leaf_to_man_transform_51: -2112245476
+      auka_leaf_to_man_transform_6: 1100394451
+      auka_leaf_to_man_transform_7: 1277482638
+      auka_leaf_to_man_transform_8: -583676329
+      auka_leaf_to_man_transform_9: 545448611
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
