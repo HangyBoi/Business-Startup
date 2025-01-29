@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Map : MonoBehaviour
 {
@@ -17,11 +16,5 @@ public class Map : MonoBehaviour
         Debug.Log("close map");
         player.isActive = true;
         Destroy(gameObject);
-    }
-    
-    public void GoToLevel()
-    {
-        SceneManager.LoadScene("LevelScene");
-        CloseMap();
     }
 }
