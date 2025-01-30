@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Auka : MonoBehaviour
 {
-    [SerializeField] private Transform observer;
+    private Transform observer;
     [SerializeField] private GameObject aukaEmptyPrefab;
     [Range(1f, 20f)][SerializeField] private float detectionRange;
 
@@ -15,6 +15,7 @@ public class Auka : MonoBehaviour
     {
         animator = GetComponentInChildren<Animator>();
 
+        observer = FindObjectOfType<PlayerMovement>().gameObject.transform;
         if (!observer) Debug.Log("Auka has no observer assigned!");
 
         GetComponent<PickupInteractable>().PickupDestroyed += InstantiateLog;

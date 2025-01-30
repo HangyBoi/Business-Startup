@@ -217,7 +217,7 @@ MonoBehaviour:
   attackBar: {fileID: 6989541346950566877}
   attackCooldown: 2
   weaponPivot: {fileID: 8373392952359057518}
-  weaponRange: 1.5
+  weaponRange: 3
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256

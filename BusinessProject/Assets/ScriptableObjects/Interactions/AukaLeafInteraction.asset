@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: AukaLeafInteraction
   m_EditorClassIdentifier: 
   interactableName: Leaf
-  icon: {fileID: 21300000, guid: 7fef5e23762d5be44ac03f4a1f274055, type: 3}
+  icon: {fileID: 21300000, guid: 42e62ed67565915448bf6f41795273f3, type: 3}
   destroyOnInteract: 1

@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93fa09924e374f0d951fdd7cae90d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 10
-  attackRange: 3
+  detectionRange: 8
+  attackRange: 2.5
   unDetectionRangeMultiplier: 5
 --- !u!114 &1543804732003631735
 MonoBehaviour:

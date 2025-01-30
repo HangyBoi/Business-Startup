@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4960330989148513811}
+  - component: {fileID: 8738244029852870836}
+  - component: {fileID: 7634788576604870481}
   m_Layer: 0
   m_Name: LeshlingPickup
   m_TagString: Untagged
@@ -32,6 +34,41 @@ Transform:
   - {fileID: 8527941447815967370}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &8738244029852870836
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704655479703311656}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7634788576604870481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704655479703311656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bec10c2aec4a89848e163f7f5d9654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableID: 0
+  interactionData: {fileID: 11400000, guid: f31f37e89fa66ee449e3b016ea873144, type: 2}
 --- !u!1 &6866431957965622805
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +143,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 348764601, guid: e9724a8bd752648afbe487e0bc763db7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b6a01b8da016a640942e0ca34de23cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
