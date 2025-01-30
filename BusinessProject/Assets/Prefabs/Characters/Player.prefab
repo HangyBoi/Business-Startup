@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8373392952359057518}
+  - component: {fileID: 1527947590672764562}
   m_Layer: 9
   m_Name: Weapon
   m_TagString: Untagged
@@ -31,6 +32,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 88024803668176805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1527947590672764562
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234504607291576887}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1794537910944158483
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,8 +223,8 @@ MonoBehaviour:
     m_Bits: 256
   basicDamage: 1
   perfectDamage: 3
-  basicKnockback: 10
-  perfectKnockback: 30
+  basicKnockback: 3
+  perfectKnockback: 10
 --- !u!114 &5184513619504657332
 MonoBehaviour:
   m_ObjectHideFlags: 0
