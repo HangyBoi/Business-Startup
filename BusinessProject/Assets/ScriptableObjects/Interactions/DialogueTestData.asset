@@ -54,39 +54,45 @@ MonoBehaviour:
   - Wait-wait! I forgot, Auka may also be active in that area.
   - Try to.. surprise it! And stay safe, Sashen'ka.
   portraitsStart:
-  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
   - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
   - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
-  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
-  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
+  - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
   - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
-  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
   speakersInProgress:
-  - You
-  - Babushka
+  - Sasha
+  - Baba Olga
   dialogueInProgress:
-  - What do i do
-  - bring pickups
+  - Babushka, what do I have to bring to the boon of protection?
+  - We need Leshling Barks or Auka Leafs from the forest.
   portraitsInProgress:
-  - {fileID: -1195053699, guid: 81e702a38bb143c4bb18c6f2761ec54c, type: 3}
-  - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
+  - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   speakersFinish:
-  - You
-  - Babushka
+  - Sasha
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
   dialogueFinish:
-  - I brought pickups
-  - Ok
+  - I felt presense of Mara while being in the evil part of the forest.
+  - She is becoming stronger - I have nightmares of her every night.
+  - ...
+  - 
   portraitsFinish:
-  - {fileID: -1840502214, guid: 81e702a38bb143c4bb18c6f2761ec54c, type: 3}
-  - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
+  - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
