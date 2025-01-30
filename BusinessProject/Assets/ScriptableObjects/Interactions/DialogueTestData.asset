@@ -88,11 +88,12 @@ MonoBehaviour:
   - Baba Olga
   dialogueFinish:
   - I felt presense of Mara while being in the evil part of the forest.
-  - She is becoming stronger - I have nightmares of her every night.
+  - Her spirit is growing and spreading - I have nightmares of her every night.
   - ...
-  - 
+  - Make an offer to the boon of protection - that way we can sleep peacefully until
+    tomorrow.
   portraitsFinish:
   - {fileID: 21300000, guid: d411dfac89fdc5d47bfbe2bc5f66abe1, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
-  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
