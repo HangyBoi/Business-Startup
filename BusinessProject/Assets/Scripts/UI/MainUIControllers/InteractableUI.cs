@@ -66,7 +66,7 @@ public class InteractableUI : MonoBehaviour
             // popupRect.anchoredPosition = Vector2.zero;
 
             // Option 2: If you prefer setting the position in screen space
-            popupRect.position = new Vector3(Screen.width / 2 + 130, Screen.height / 2 - 60, popupRect.position.z);
+            popupRect.position = new Vector3(Screen.width / 2 + 130, Screen.height / 2 - 55, popupRect.position.z);
         }
         else
         {
