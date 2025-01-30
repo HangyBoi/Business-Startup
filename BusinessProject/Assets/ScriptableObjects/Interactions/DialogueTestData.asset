@@ -15,14 +15,63 @@ MonoBehaviour:
   interactableName: Talk
   icon: {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
   speakersStart:
-  - Babushka
-  - You
+  - Sasha
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Sasha
+  - Sasha
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
+  - Sasha
+  - Baba Olga
+  - Baba Olga
+  - Baba Olga
   dialogueStart:
-  - Hello son
-  - Hello BABUSHKA
+  - My dear babushka! I'm glad God have protected you while I was away.
+  - Sashen'ka, you are alive!
+  - Do you remember the times when you and me used to play outside the village?
+  - Your mama and papa helped me with the work but you always slacked off.
+  - ' We had no dark winters, no famine or disease...'
+  - ...
+  - She came back to ruin that all we have..
+  - ...
+  - We must focus on the present and take revenge for the losses of our people.
+  - Sashen'ka, you were always a strong little one, not so little anymore...
+  - Mara.. She has been more.. intrusive so to speak.
+  - The Forest is claimed by the children of Leshyi under her influence.
+  - You should keep your distance, as their thorns may sting.
+  - However, collecting them is necessary in order for us to keep this village safe
+    from Mara's forces.
+  - I will be careful. The family spirit will defend me from the evil.
+  - ...
+  - Wait-wait! I forgot, Auka may also be active in that area.
+  - Try to.. surprise it! And stay safe, Sashen'ka.
   portraitsStart:
+  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
   - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
-  - {fileID: 1927116010, guid: 5f39825622d972343be6615ec733e3f6, type: 3}
+  - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
+  - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
+  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
+  - {fileID: 21300000, guid: 8d46fa3b7ec3f6c448a41ab8c562cf06, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: -877953631, guid: 3143cf94535f2b640bf4c2eae8d8381c, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: bf89c32d91562934bbf9e2a9289e9648, type: 3}
+  - {fileID: 21300000, guid: a9c5fb6bee6b6fb4fb02243d0d3afd84, type: 3}
   speakersInProgress:
   - You
   - Babushka
