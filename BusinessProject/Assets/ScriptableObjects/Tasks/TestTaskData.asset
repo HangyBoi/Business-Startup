@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestTaskData
   m_EditorClassIdentifier: 
   TaskID: 0
-  Title: Test Task
+  Title: Collect Lesling barks or auka leafs
   Description: 
   RequiredProgress: 3
   RequiresKeyItem: 0
