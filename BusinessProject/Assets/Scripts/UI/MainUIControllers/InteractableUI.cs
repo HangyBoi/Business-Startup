@@ -25,6 +25,7 @@ public class InteractableUI : MonoBehaviour
             Debug.LogWarning($"Interactable '{interactable.name}' InteractionData has no icon assigned. Popup will be shown without an icon.");
         }
 
+        Debug.Log("start show pop");
         ShowPopup(interactable.GetPopupText(), interactable.interactionData.icon);
     }
 

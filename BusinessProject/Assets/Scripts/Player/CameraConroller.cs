@@ -17,9 +17,19 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float rotationDuration = 0.2f; // Duration of the rotation animation
 
     private float yRotation = 0f;
+    
+    public static CameraController cameraController { get; private set; }
 
     void Start()
     {
+        //Singleton
+        if (cameraController == null)
+        {
+            cameraController = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+        
         //Cursor.lockState = CursorLockMode.Locked;
         if (target != null)
         {

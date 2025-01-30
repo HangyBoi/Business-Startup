@@ -123,10 +123,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2
-  m_Height: 3
+  m_Radius: 0.97004163
+  m_Height: 1.9400833
   m_Direction: 1
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Center: {x: 0, y: 0.36, z: 0.02}
 --- !u!135 &7735366298543649586
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec69dbc34f22442519640adcc41dcb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 15
   isActive: 1
 --- !u!114 &5066616022220081175
 MonoBehaviour:
@@ -201,8 +201,8 @@ MonoBehaviour:
     m_Bits: 256
   basicDamage: 1
   perfectDamage: 3
-  basicKnockback: 3
-  perfectKnockback: 6
+  basicKnockback: 10
+  perfectKnockback: 30
 --- !u!114 &5184513619504657332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,15 +721,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559201337362703259, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3559201337362703259, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.030000001
+      value: 0.015000001
       objectReference: {fileID: 0}
     - target: {fileID: 3559201337362703259, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3559201337362703259, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -782,6 +782,14 @@ PrefabInstance:
     - target: {fileID: 3559201337362703259, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193280077978481116, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193280077978481116, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5209140907217803295, guid: 9d5aab6f6de33e24b9781b4415235ebc, type: 3}
       propertyPath: spacing
