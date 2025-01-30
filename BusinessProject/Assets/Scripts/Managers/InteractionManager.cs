@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractionManager : MonoBehaviour
 {
@@ -15,10 +16,15 @@ public class InteractionManager : MonoBehaviour
     private void Awake()
     {
         //Singleton
-        if (interactionManager == null) interactionManager = this;
+        if (interactionManager == null)
+        {
+            interactionManager = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else Destroy(gameObject);
+        
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
     private void Start()
     {
         Interactable.InteractableDestroyed += TriggerInteractableExitEvent;
@@ -27,6 +33,8 @@ public class InteractionManager : MonoBehaviour
     private void OnDisable()
     {
         Interactable.InteractableDestroyed -= TriggerInteractableExitEvent;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,5 +73,10 @@ public class InteractionManager : MonoBehaviour
             OnInteractableExited?.Invoke(currentInteractable);
             currentInteractable = null;
         }
+    }
+
+    private void OnSceneLoaded(Scene s, LoadSceneMode m)
+    {
+        if(FindObjectOfType<PlayerSpawn>()) gameObject.transform.position = FindObjectOfType<PlayerSpawn>().transform.position;
     }
 }
