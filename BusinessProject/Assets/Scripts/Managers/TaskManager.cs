@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TaskManager : MonoBehaviour
 {
@@ -141,7 +142,17 @@ public class TaskManager : MonoBehaviour
             Task task = tasks[taskID];
             task.UpdateProgress(amount);
             OnTaskProgressed?.Invoke(task);
-            if(task.Status == TaskStatus.Completed) OnTaskCompleted?.Invoke(task);
+            if (task.Status == TaskStatus.Completed)
+            {
+                OnTaskCompleted?.Invoke(task);
+                
+                //BIT OF HARDCODE
+                if (SceneManager.GetActiveScene().name == "Level")
+                {
+                    UIManager.uiManager.EnableGoHomeButton();
+                }
+                
+            }
         }
         else
         {
