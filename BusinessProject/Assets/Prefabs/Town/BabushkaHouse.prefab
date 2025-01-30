@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9134916932071891681}
   - component: {fileID: 5889269021070889871}
-  - component: {fileID: 5135398752550439754}
   m_Layer: 0
   m_Name: BabushkaHouse
   m_TagString: Untagged
@@ -57,24 +56,6 @@ CapsuleCollider:
   m_Height: 6.44
   m_Direction: 0
   m_Center: {x: 0, y: 2, z: 0}
---- !u!114 &5135398752550439754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923962503255336773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86da97a1e0444c7691c8b56d7c606124, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactableID: 0
-  interactionData: {fileID: 11400000, guid: de3bec391d17245fbb998bf8320acbbe, type: 2}
-  dialogueCanvas: {fileID: 0}
-  speakerText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  portraitImage: {fileID: 0}
 --- !u!1 &2056592423747689906
 GameObject:
   m_ObjectHideFlags: 0
