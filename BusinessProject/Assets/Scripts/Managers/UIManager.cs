@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class UIManager : MonoBehaviour
     [NonSerialized] public MapUI mapUiController;
 
     [NonSerialized] public GameObject currentUIElement;
+
+    [SerializeField] private GameObject goHomeButton;
 
     private void Awake()
     {
@@ -26,6 +29,8 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        SceneManager.sceneLoaded += DisableGoHomeButton;
     }
 
     private void Start()
@@ -91,6 +96,8 @@ public class UIManager : MonoBehaviour
         {
             Inventory.ItemAddedToInventory -= invUiController.ReinitializeInventory;
         }
+        
+        SceneManager.sceneLoaded += DisableGoHomeButton;
     }
     
     /// <summary>
@@ -103,5 +110,15 @@ public class UIManager : MonoBehaviour
             Destroy(currentUIElement);
             currentUIElement = null;
         }
+    }
+    
+    //HC
+    public void EnableGoHomeButton()
+    {
+        if(goHomeButton) goHomeButton.SetActive(true);
+    }
+    public void DisableGoHomeButton(Scene s, LoadSceneMode m)
+    {
+        if(goHomeButton) goHomeButton.SetActive(false);
     }
 }
