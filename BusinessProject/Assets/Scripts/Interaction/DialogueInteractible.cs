@@ -1,5 +1,8 @@
+using System;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class DialogueInteractable : Interactable
 {
@@ -8,6 +11,8 @@ public class DialogueInteractable : Interactable
     [SerializeField] private TextMeshProUGUI speakerText;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private Image portraitImagePlaceholderInCanvas;
+
+    public static DialogueInteractable di { get; private set; }
 
     enum DialogueType
     {
@@ -18,6 +23,20 @@ public class DialogueInteractable : Interactable
     
     private PlayerMovement player;
     private int step = 0;
+
+    private void Start()
+    {
+        //Singleton
+        if (di == null)
+        {
+            di = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
     protected override void Handle()
     {
         if (interactionData is DialogueInteractionData dialogueInteractionData)
@@ -81,5 +100,14 @@ public class DialogueInteractable : Interactable
         step += 1;
         Debug.Log(step);
     }
-    
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene s, LoadSceneMode m)
+    {
+        if(FindObjectOfType<BabushkaSpawn>()) gameObject.transform.position = FindObjectOfType<BabushkaSpawn>().transform.position;
+    }
 }
