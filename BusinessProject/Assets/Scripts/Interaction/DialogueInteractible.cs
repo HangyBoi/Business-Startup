@@ -7,7 +7,7 @@ public class DialogueInteractable : Interactable
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private TextMeshProUGUI speakerText;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private Image portraitImage;
+    [SerializeField] private Image portraitImagePlaceholderInCanvas;
 
     enum DialogueType
     {
@@ -77,7 +77,7 @@ public class DialogueInteractable : Interactable
         dialogueCanvas.SetActive(true);
         speakerText.text = Speakers[step];
         dialogueText.text = DialogueLines[step];
-        portraitImage.sprite = Portraits[step];
+        portraitImagePlaceholderInCanvas.sprite = Portraits[step];
         step += 1;
         Debug.Log(step);
     }

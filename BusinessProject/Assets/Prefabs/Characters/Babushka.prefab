@@ -29,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4244711866347609279}
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86da97a1e0444c7691c8b56d7c606124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactableID: 3
+  interactableID: 0
   interactionData: {fileID: 11400000, guid: de3bec391d17245fbb998bf8320acbbe, type: 2}
   dialogueCanvas: {fileID: 0}
   speakerText: {fileID: 0}
   dialogueText: {fileID: 0}
-  portraitImage: {fileID: 0}
+  portraitImagePlaceholderInCanvas: {fileID: 0}
 --- !u!1 &3944498656618501750
 GameObject:
   m_ObjectHideFlags: 0

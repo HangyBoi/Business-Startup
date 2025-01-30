@@ -31,6 +31,6 @@ public class TasksUI : MonoBehaviour
     {
         //Debug.Log($"UIManager: Task '{task.Data.Title}' finished.");
         taskTitleText.text = "No current task";
-        taskProgressionText.text = "-";
+        taskProgressionText.text = "";
     }
 }
