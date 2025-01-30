@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 
 public class TargetDetector : MonoBehaviour
 {
-    [SerializeField] private GameObject target;
+    private GameObject target;
     [SerializeField] private float detectionRange = 2;
     [SerializeField] private float attackRange = 0.5f;
     [SerializeField] private float unDetectionRangeMultiplier = 2f;
@@ -16,6 +16,7 @@ public class TargetDetector : MonoBehaviour
     public System.Action TargetUndetected;
     void Start()
     {
+        target = FindObjectOfType<PlayerMovement>().gameObject;
         if(!target) Debug.LogAssertion("No target set in target detector!");
     }
     
