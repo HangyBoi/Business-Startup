@@ -17,6 +17,9 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private float basicKnockback = 4f;
     [SerializeField] private float perfectKnockback = 6f;
 
+    [Header("Audio Settings")]
+    [SerializeField] private Weapon_Swing weaponSwing; // Reference to Weapon_Swing
+
     private bool isAttacking;
     private float nextAttackAllowedTime;
     private Animator animator;
@@ -28,7 +31,13 @@ public class PlayerCombat : MonoBehaviour
         {
             Debug.LogWarning("Animator component not found on PlayerCombat.");
         }
+
+        if (weaponSwing == null)
+        {
+            Debug.LogWarning("Weapon_Swing reference not set in PlayerCombat.");
+        }
     }
+
     private void Update()
     {
         // If on cooldown, do nothing
@@ -72,6 +81,12 @@ public class PlayerCombat : MonoBehaviour
 
         // Attempt to strike enemies in range
         AttemptDealDamage(damageToDeal, knockbackToApply);
+
+        // Play swing sound based on success
+        if (weaponSwing != null)
+        {
+            weaponSwing.PlaySwingSound(success);
+        }
 
         // Start cooldown
         nextAttackAllowedTime = Time.time + attackCooldown;

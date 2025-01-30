@@ -145,8 +145,8 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.97004163
-  m_Height: 1.9400833
+  m_Radius: 1
+  m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.36, z: 0.02}
 --- !u!135 &7735366298543649586
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec69dbc34f22442519640adcc41dcb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 10
   isActive: 1
 --- !u!114 &5066616022220081175
 MonoBehaviour:
@@ -225,6 +225,7 @@ MonoBehaviour:
   perfectDamage: 3
   basicKnockback: 3
   perfectKnockback: 10
+  weaponSwing: {fileID: 494546851615259843}
 --- !u!114 &5184513619504657332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,8 +286,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c0f9666daaac4284babc57aef03578b1, type: 3}
   - {fileID: 8300000, guid: 4a3d0a10372a45f448c0f1c0a4c5fa29, type: 3}
   clipVolume: 1
-  attackBar: {fileID: 0}
-  attackCooldown: 2
 --- !u!114 &7744468931019771950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,7 +603,7 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7384736712007263061}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0

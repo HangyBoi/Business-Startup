@@ -1,55 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon_Swing : MonoBehaviour
 {
+    [Header("Audio Settings")]
     public AudioSource audioSource;
     public AudioClip[] regularSwing;
     public AudioClip[] perfectSwing;
+
     [Range(0f, 1f)]
     public float clipVolume = 1.0f;
 
-
-    [SerializeField] private AttackBarController attackBar;
-    [SerializeField] private float attackCooldown = 2f;
-    private bool isAttacking;
-    private float nextAttackAllowedTime;
-
-    void Update()
+    /// <summary>
+    /// Plays a swing sound based on whether the attack was perfect.
+    /// </summary>
+    /// <param name="isPerfect">Indicates if the attack was perfect.</param>
+    public void PlaySwingSound(bool isPerfect)
     {
-        if (Time.time < nextAttackAllowedTime) return;
+        AudioClip selectedClip;
 
-        if (Input.GetMouseButtonDown(0) && !isAttacking) isAttacking = true;
-
-        if (Input.GetMouseButtonUp(0) && isAttacking)
+        if (isPerfect && perfectSwing.Length > 0)
         {
-            PlaySwingSound();
-            isAttacking = false;
-            nextAttackAllowedTime = Time.time + attackCooldown;
+            selectedClip = perfectSwing[Random.Range(0, perfectSwing.Length)];
         }
-    }
-
-    private void PlaySwingSound()
-    {
-        AudioClip randomClip;
-
-        if (attackBar)
+        else if (regularSwing.Length > 0)
         {
-            if (attackBar.WasArrowInRedZone())
-            {
-                // Choose a random clip from perfectSwing
-                randomClip = perfectSwing[Random.Range(0, perfectSwing.Length)];
-            }
-            else
-            {
-                // Choose a random clip from regularSwing
-                randomClip = regularSwing[Random.Range(0, regularSwing.Length)];
-            }
-            // Play the chosen clip
-            Debug.Log(randomClip);
-
-            audioSource.PlayOneShot(randomClip, clipVolume);
+            selectedClip = regularSwing[Random.Range(0, regularSwing.Length)];
         }
+        else
+        {
+            Debug.LogWarning("No swing sounds available to play.");
+            return;
+        }
+
+        Debug.Log($"Playing sound: {selectedClip.name}");
+        audioSource.PlayOneShot(selectedClip, clipVolume);
     }
 }
